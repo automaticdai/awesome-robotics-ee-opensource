@@ -1,10 +1,8 @@
 # 机器人/电子设计/人工智能开源项目列表
 
-本页面收录优秀的机器人、电子设计、人工智能相关的（中文）开源项目。
+本页面收录优秀的机器人、电子设计、人工智能相关的开源项目（中文/中国学者）。
 
 如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit a new issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者提交 Pull Request.
-
-[toc]
 
 ## 1. 机器人项目 | Robots
 
@@ -24,12 +22,12 @@
 
 | 项目名称                      | 发起人/作者                | 项目地址                                                     | 项目介绍                                                     |
 | ---------------------------- | -------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
-| PocketLCD: 带充电宝功能的便携显示器 | 稚晖君(peng-zhihui) | [GitHub](https://github.com/peng-zhihui/PocketLCD) | 介绍视频：[【自制】你的下一个显示器，可能是个充电宝？？](https://www.bilibili.com/video/BV17D4y1X7AT) |
-| L-ink电子墨水屏NFC智能卡片 | 稚晖君(peng-zhihui) | [GitHub](https://github.com/peng-zhihui/L-ink_Card) | 为了解决个人使用IC卡时遇到的一些痛点设计的一个迷你NFC智能卡片，基于STM32L051和ST25DV。 |
+| PocketLCD: 带充电宝功能的便携显示器 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/PocketLCD) | 介绍视频：[【自制】你的下一个显示器，可能是个充电宝？？](https://www.bilibili.com/video/BV17D4y1X7AT) |
+| L-ink电子墨水屏NFC智能卡片 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/L-ink_Card) | 为了解决个人使用IC卡时遇到的一些痛点设计的一个迷你NFC智能卡片，基于STM32L051和ST25DV。 |
 | 低成本激光投射虚拟键盘的设计制作 | 陈世凯 (CSK) |  | - [低成本激光投射虚拟键盘的设计制作-上(原理和硬件)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part1.html) <br />- [低成本激光投射虚拟键盘的设计制作-下(算法与实现)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part2.html) |
 | 自制低成本3D激光扫描测距仪 | 陈世凯 (CSK) | [Google Code](https://code.google.com/archive/p/rp-3d-scanner/) | - [自制低成本3D激光扫描测距仪(3D激光雷达)，第一部分](http://www.csksoft.net/blog/post/lowcost_3d_laser_ranger_1.html) <br />- [自制低成本3D激光扫描测距仪(3D激光雷达)，第二部分](http://www.csksoft.net/blog/post/lowcost_3d_laser_ranger_2.html) |
 | NixieClock辉光管时钟 | Blanboom | [GitHub](https://github.com/blanboom/NixieClock) | 支持蓝牙 4.0 的辉光管时钟。 |
-| 3D8光立方 | 官微宏 (aGuegu) | [项目主页](http://aguegu.net/?page_id=99) | 8 x 8 LED光立方 |
+| 3D8光立方 | 官微宏 (aGuegu) | [项目主页](http://aguegu.net/?page_id=99) | 8 x 8 LED光立方。 |
 | Gameduino 2/3                 | ExCamera / 云飞机器人实验室 | [Gameduino 2 (KS)](https://www.kickstarter.com/projects/2084212109/gameduino-2-this-time-its-personal?ref=discovery&term=Gameduino) \| [Gameduino 3 (KS)](https://www.kickstarter.com/projects/2084212109/gameduino-3?ref=discovery&term=Gameduino) | Gameduino是基于Arduino的图形交互和游戏扩展版。它是目前Arduino平台上性能最好的图形协处理器。它由ExCamera在Kickstarter上成功众筹。云飞实验室参与了工具链开发、中文手册 [(点击这里下载)](http://excamera.com/files/gd2book_cn.pdf) 以及中文推广。 |
 | RT-Thread          | Bernard Xiong    | [GitHub](https://github.com/RT-Thread/rt-thread)             | RT-Thread诞生于2006年，是一款以开源、中立、社区化发展起来的物联网操作系统。 |
 | 妖姬 – 增强现实电子植物 | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/arduino-yaoji)      | 妖姬是云飞实验室在极客大赛中的48小时极限创作作品。妖姬是一款概念式的互动电子植物，采用了Arduino + Android的方案，融合了信息与物理的概念式作品。 |
@@ -40,6 +38,7 @@
 
 | 项目名称                          | 发起人/作者          | 项目地址                                            | 项目介绍                                                     |
 | --------------------------------- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| DeepSeek-V3 | DeepSeek-AI | [GitHub](https://github.com/deepseek-ai/DeepSeek-V3) | DeepSeek 模型是近年来在自然语言处理（NLP）领域备受瞩目的开源大规模语言模型系列。其最新版本 DeepSeek-V3 采用了混合专家（Mixture-of-Experts，MoE）架构，拥有 6710 亿个参数，每个词元（token）激活 370 亿个参数。该模型在多项基准测试中表现出色，性能媲美 GPT-4 和 Claude 等领先的闭源模型。 |
 | TVM | 陈天奇 | [GitHub](https://github.com/apache/tvm) | *Apache TVM* 是一个用于CPU、GPU 和机器学习加速器的开源机器学习编译器框架，旨在让机器学习工程师能够在任何硬件后端上高效地优化和运行计算。 |
 | MxNet                             | 李沐 (Mu Li)          | [GitHub](https://github.com/apache/incubator-mxnet) | 深度学习编程框架，支持C++/Python/R。                           |
 | Caffe2 | 贾扬清 (Yangqing Jia) | [GitHub](https://github.com/facebookarchive/caffe2) | 深度学习编程框架，支持C++/Python/Matlab。现已与Pytorch合并。 |
