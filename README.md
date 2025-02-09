@@ -38,7 +38,7 @@
 
 | 项目名称                          | 发起人/作者          | 项目地址                                            | 项目介绍                                                     |
 | --------------------------------- | -------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| DeepSeek-V3 | DeepSeek-AI | [GitHub](https://github.com/deepseek-ai/DeepSeek-V3) | DeepSeek 模型是近年来在自然语言处理（NLP）领域备受瞩目的开源大规模语言模型系列。其最新版本 DeepSeek-V3 采用了混合专家（Mixture-of-Experts，MoE）架构，拥有 6710 亿个参数，每个词元（token）激活 370 亿个参数。该模型在多项基准测试中表现出色，性能媲美 GPT-4 和 Claude 等领先的闭源模型。 |
+| DeepSeek | DeepSeek-AI | [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) \| [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) | DeepSeek 模型是近年来在自然语言处理（NLP）领域备受瞩目的开源大规模语言模型系列。其最新版本 DeepSeek-V3 采用了混合专家（Mixture-of-Experts，MoE）架构，拥有 6710 亿个参数，每个词元（token）激活 370 亿个参数。该模型在多项基准测试中表现出色，性能媲美 GPT-4 和 Claude 等领先的闭源模型。 |
 | TVM | 陈天奇 | [GitHub](https://github.com/apache/tvm) | *Apache TVM* 是一个用于CPU、GPU 和机器学习加速器的开源机器学习编译器框架，旨在让机器学习工程师能够在任何硬件后端上高效地优化和运行计算。 |
 | MxNet                             | 李沐 (Mu Li)          | [GitHub](https://github.com/apache/incubator-mxnet) | 深度学习编程框架，支持C++/Python/R。                           |
 | Caffe2 | 贾扬清 (Yangqing Jia) | [GitHub](https://github.com/facebookarchive/caffe2) | 深度学习编程框架，支持C++/Python/Matlab。现已与Pytorch合并。 |
