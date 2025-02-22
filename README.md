@@ -1,8 +1,12 @@
 # 机器人/电子设计/人工智能开源项目列表
 
-本页面收录优秀的机器人、电子设计、人工智能相关的开源项目（中文/中国学者）。
+本页面收录优秀的机器人、电子设计、人工智能相关的开源项目（中文/华人学者）。
 
-如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit a new issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者提交 Pull Request.
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。欢迎大家多来看看我们的 [B站](https://space.bilibili.com/493264461) 和 [YouTube](https://www.youtube.com/@yfrobotics).
+
+欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit a new issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者提交 Pull Request.
+
+最后更新时间： 2025年02月22日
 
 ## 1. 机器人项目 | Robots
 
@@ -22,6 +26,7 @@
 
 | 项目名称                      | 发起人/作者                | 项目地址                                                     | 项目介绍                                                     |
 | ---------------------------- | -------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+| 香山（XiangShan）开源处理器 | 中科院计算所 | [GitHub](https://github.com/OpenXiangShan/XiangShan) | 香山是一款开源的高性能 RISC-V 处理器。 |
 | PocketLCD: 带充电宝功能的便携显示器 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/PocketLCD) | 介绍视频：[【自制】你的下一个显示器，可能是个充电宝？？](https://www.bilibili.com/video/BV17D4y1X7AT) |
 | L-ink电子墨水屏NFC智能卡片 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/L-ink_Card) | 为了解决个人使用IC卡时遇到的一些痛点设计的一个迷你NFC智能卡片，基于STM32L051和ST25DV。 |
 | 低成本激光投射虚拟键盘的设计制作 | 陈世凯 (CSK) |  | - [低成本激光投射虚拟键盘的设计制作-上(原理和硬件)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part1.html) <br />- [低成本激光投射虚拟键盘的设计制作-下(算法与实现)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part2.html) |
@@ -47,5 +52,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。欢迎贡献。
-最后更新时间： 2024年11月12日。
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。
