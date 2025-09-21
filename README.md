@@ -22,6 +22,12 @@
 | OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
 | vlm_arm                       | 同济子豪兄 (TommyZihao) | [GitHub](https://github.com/TommyZihao/vlm_arm)              | 机械臂+大模型+多模态                                         |
 | awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
+| 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
+| 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
+| 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
+| 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
+| 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
+| 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
 
 ## 2. 电子设计项目 | EE
 
@@ -37,6 +43,8 @@
 | 妖姬 – 增强现实电子植物             | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/arduino-yaoji)      | 妖姬是云飞实验室在极客大赛中的48小时极限创作作品。妖姬是一款概念式的互动电子植物，采用了Arduino + Android的方案，融合了信息与物理的概念式作品。 |
 | YF Smart Home                       | 云飞机器人实验室            | [GitHub](https://github.com/yfrobotics/yf-home-iot)          | 云飞智能家居项目旨在探索新的智能家居系统解决方案。           |
 | 树莓派温湿度气象站                  | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/rpi-environmental-sensing) | 基于树莓派的开源温湿度气象站。                               |
+| ESP32智能家居开发板                | 乐鑫科技 (Espressif)      | [GitHub](https://github.com/espressif/esp-idf)                | ESP32系列芯片的官方开发框架和示例项目。                     |
+| LicheeRV开发板项目                 | 矽递科技 (Sipeed)        | [GitHub](https://github.com/sipeed/LicheeRV-Nano-Build)       | LicheeRV-Nano的构建项目和开发工具。                         |
 
 ## 3. 处理器架构及操作系统 | Arch & OS
 
@@ -59,6 +67,10 @@
 | PaddlePaddle | 百度                  | [GitHub](https://github.com/PaddlePaddle/Paddle)             | 飞桨（PaddlePaddle）以百度多年的深度学习技术研究和业务应用为基础，集深度学习核心训练和推理框架、基础模型库、端到端开发套件、丰富的工具组件于一体，是中国首个自主研发、功能丰富、开源开放的产业级深度学习平台。 |
 | DeepVision   | 稚晖君 (peng-zhihui)  | [GitHub](https://github.com/peng-zhihui/DeepVision)          | 本项目实现了移动端CV算法快速验证框架，旨在提供一套通用的CV算法验证框架。框架经过本人一年多的开发和维护，目前已经完成绝大部分API的开发，实现包括实时视频流模块、单帧图像处理模块、3D场景模块、云端推理模块等众多功能。 |
 | MMDetection  | 商汤科技              | [GitHub](https://github.com/open-mmlab/mmdetection)          | 商汤的目标检测工具箱及基准测试                               |
+| ChatGLM      | 智谱AI                | [GitHub](https://github.com/THUDM/ChatGLM-6B)                | 开源双语对话语言模型，支持中英文对话。                       |
+| Qwen         | 阿里云                | [GitHub](https://github.com/QwenLM/Qwen)                     | 阿里云通义千问大语言模型系列。                               |
+| Baichuan     | 百川智能              | [GitHub](https://github.com/baichuan-inc/Baichuan2)          | 百川智能开源大语言模型。                                     |
+| InternLM     | 上海AI实验室          | [GitHub](https://github.com/InternLM/InternLM)               | 上海AI实验室开源的大语言模型。                               |
 
 ## 5. 其他优秀项目
 
@@ -68,4 +80,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2025年05月16日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2025年09月21日
