@@ -54,7 +54,7 @@
 | 香山（XiangShan）开源处理器 | 中科院计算所  | [GitHub](https://github.com/OpenXiangShan/XiangShan) | 香山是一款开源的高性能 RISC-V 处理器。                       |
 | RT-Thread                   | Bernard Xiong | [GitHub](https://github.com/RT-Thread/rt-thread)     | RT-Thread诞生于2006年，是一款以开源、中立、社区化发展起来的物联网操作系统。 |
 | TencentOS Tiny              | 腾讯          | [GitHub](https://github.com/Tencent/TencentOS-tiny)  | 腾讯物联网终端操作系统（TencentOS tiny）是腾讯面向物联网领域开发的实时操作系统，具有低功耗，低资源占用，模块化，安全可靠等特点，可有效提升物联网终端产品开发效率。TencentOS tiny 提供精简的 RTOS 内核，内核组件可裁剪可配置，可快速移植到多种主流 MCU 及模组芯片上。而且，基于RTOS内核提供了丰富的物联网组件，内部集成主流物联网协议栈（如 CoAP/MQTT/TLS/DTLS/LoRaWAN/NB-IoT 等），可助力物联网终端设备及业务快速接入腾讯云物联网平台。 |
-
+| AimRT | AimRT | [GitHub](https://github.com/AimRT/AimRT) | AimRT 是一个面向现代机器人领域的运行时开发框架。 它基于 Modern C++ 开发，轻量且易于部署，在资源管控、异步编程、部署配置等方面具有更现代的设计。AimRT 致力于整合机器人端侧、边缘端、云端等各种部署场景的研发。 它服务于现代基于人工智能和云的机器人应用，提供完善的调试和性能分析工具链，以及良好的可观测性支持。AimRT 还提供了全面的插件开发接口，具有高度可扩展性。 它与 ROS2、HTTP、Grpc 等传统机器人生态系统或云服务生态系统兼容，并支持对现有系统的逐步升级。|
 
 ## 4. 机器学习项目 | ML
 
