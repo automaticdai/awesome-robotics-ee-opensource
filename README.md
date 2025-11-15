@@ -2,7 +2,7 @@
 
 - 本页面收录优秀的机器人、电子设计、人工智能相关的开源项目。
 
-- 本列表由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。欢迎大家常来看看我们的 [B站](https://space.bilibili.com/493264461) 和 [YouTube](https://www.youtube.com/@yfrobotics)。
+- 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) | [知乎](https://www.zhihu.com/column/yfworld) | [YouTube](https://www.youtube.com/@yfrobotics) | [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
 
 - 欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者 clone & pull request。
 - 目前仅收录中文开源及华人发起的项目。
@@ -24,6 +24,7 @@
 | awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
 | 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
 | 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
+| Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
 | 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
 | 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
 | 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
@@ -72,12 +73,10 @@
 | Baichuan     | 百川智能              | [GitHub](https://github.com/baichuan-inc/Baichuan2)          | 百川智能开源大语言模型。                                     |
 | InternLM     | 上海AI实验室          | [GitHub](https://github.com/InternLM/InternLM)               | 上海AI实验室开源的大语言模型。                               |
 
-## 5. 其他优秀项目
+---
 
-| 项目名称                                | 发起人/作者 | 项目地址 | 项目介绍 |
-| --------------------------------------- | ----------- | -------- | -------- |
-| 更多项目持续收集中... 欢迎在issue中投稿 |             |          |          |
+**其他优秀项目更多项目持续收集中... 欢迎在issue中投稿!**
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2025年09月21日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2025年11月15日
