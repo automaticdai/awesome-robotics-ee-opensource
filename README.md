@@ -1,16 +1,20 @@
-# 机器人/电子设计/人工智能开源项目列表
+# 机器人/嵌入式系统/人工智能开源项目列表
 
-- 本页面收录优秀的机器人、电子设计、人工智能相关的开源项目。
-
-- 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) | [知乎](https://www.zhihu.com/column/yfworld) | [YouTube](https://www.youtube.com/@yfrobotics) | [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
-
-- 欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者 clone & pull request。
+- 本页面收录优秀的机器人、嵌入式系统、人工智能相关的开源项目。
 - 目前仅收录中文开源及华人发起的项目。
+- 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) | [知乎](https://www.zhihu.com/column/yfworld) | [博客]((https://yfrobotics.github.io/)) | [YouTube](https://www.youtube.com/@yfrobotics) | [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
+- 欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者 clone & pull request。
+
 
 ## 1. 机器人项目 | Robots
 
 | 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
 | ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| XR-1 VLA模型                  | 北京人形机器人创新中心  | [GitHub](https://github.com/Open-X-Humanoid/XR-1)            | 中国首个国标级VLA大模型，支持跨机器人平台操作，包含RoboMIND 2.0数据集和ArtVIP资产。 |
+| DexVLA                        | 多机构联合             | [GitHub](https://github.com/juruobenruo/DexVLA)              | 基于Qwen2-VL的视觉-语言-动作模型，支持单臂、双臂和灵巧手等多种机器人形态的通用控制。 |
+| ManiFoundation                | 新加坡国立大学/清华大学 | [GitHub](https://github.com/NUS-LinS-Lab/ManiFM)             | 通用机器人操作基础模型，通过接触合成实现对刚性、铰接和可变形物体的操作。 |
+| Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
+| awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
 | 超迷你机械臂机器人项目        | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/Dummy-Robot)         | 视频介绍：[【自制】我造了一台 钢 铁 侠 的 机 械 臂 ！【硬核】](https://www.bilibili.com/video/BV12341117rG) |
 | MiniRover火星车               | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/MiniRover-Hardware)  | 自制火星车的开源资料。                                       |
 | X-Bot智能机械臂写字机器人     | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/X-Bot)               | 基于CoreXY结构的机械臂。                                     |
@@ -21,7 +25,6 @@
 | ElectronBot迷你桌面机器人     | 稚晖君 (peng-zhihui)    | [项目主页](https://github.com/peng-zhihui/ElectronBot)       | 非常小巧的桌面机器人。                                       |
 | OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
 | vlm_arm                       | 同济子豪兄 (TommyZihao) | [GitHub](https://github.com/TommyZihao/vlm_arm)              | 机械臂+大模型+多模态                                         |
-| awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
 | 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
 | 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
 | Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
@@ -30,7 +33,7 @@
 | 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
 | 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
 
-## 2. 电子设计项目 | EE
+## 2. 嵌入式系统项目 | Embedded System
 
 | 项目名称                            | 发起人/作者                 | 项目地址                                                     | 项目介绍                                                     |
 | ----------------------------------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -72,6 +75,7 @@
 | Qwen         | 阿里云                | [GitHub](https://github.com/QwenLM/Qwen)                     | 阿里云通义千问大语言模型系列。                               |
 | Baichuan     | 百川智能              | [GitHub](https://github.com/baichuan-inc/Baichuan2)          | 百川智能开源大语言模型。                                     |
 | InternLM     | 上海AI实验室          | [GitHub](https://github.com/InternLM/InternLM)               | 上海AI实验室开源的大语言模型。                               |
+| Qwen2-VL     | 阿里云                | [GitHub](https://github.com/QwenLM/Qwen2-VL)                 | 阿里云通义千问多模态视觉-语言模型，广泛应用于VLA模型开发。   |
 
 ---
 
@@ -79,4 +83,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2025年11月15日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年1月19日
