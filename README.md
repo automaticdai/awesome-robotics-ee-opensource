@@ -2,7 +2,7 @@
 
 - 本页面收录优秀的机器人、嵌入式系统、人工智能相关的开源项目。
 - 目前仅收录中文开源及华人发起的项目。
-- 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) | [知乎](https://www.zhihu.com/column/yfworld) | [博客]((https://yfrobotics.github.io/)) | [YouTube](https://www.youtube.com/@yfrobotics) | [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
+- 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) | [知乎](https://www.zhihu.com/column/yfworld) | [博客](https://yfrobotics.github.io/) | [YouTube](https://www.youtube.com/@yfrobotics) | [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
 - 欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者 clone & pull request。
 
 
