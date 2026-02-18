@@ -13,20 +13,37 @@
 | XR-1 VLA模型                  | 北京人形机器人创新中心  | [GitHub](https://github.com/Open-X-Humanoid/XR-1)            | 中国首个国标级VLA大模型，支持跨机器人平台操作，包含RoboMIND 2.0数据集和ArtVIP资产。 |
 | DexVLA                        | 多机构联合             | [GitHub](https://github.com/juruobenruo/DexVLA)              | 基于Qwen2-VL的视觉-语言-动作模型，支持单臂、双臂和灵巧手等多种机器人形态的通用控制。 |
 | ManiFoundation                | 新加坡国立大学/清华大学 | [GitHub](https://github.com/NUS-LinS-Lab/ManiFM)             | 通用机器人操作基础模型，通过接触合成实现对刚性、铰接和可变形物体的操作。 |
+| AgiBot X1开源人形机器人        | 智元机器人 (AgibotTech)  | [推理](https://github.com/AgibotTech/agibot_x1_infer) \| [训练](https://github.com/AgibotTech/agibot_x1_train) \| [硬件](https://github.com/AgibotTech/agibot_x1_hardware) | 智元机器人X1完整开源人形机器人项目，包含推理模块、强化学习训练代码和全套硬件设计资料。 |
+| AgiBot-World                  | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/AgiBot-World)      | IROS 2025最佳论文候选，面向可扩展和智能具身系统的大规模操控平台。 |
+| unitree_rl_gym                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym)   | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。      |
+| ManiSkill                     | haosulab (Hillbot)     | [GitHub](https://github.com/haosulab/ManiSkill)               | SAPIEN操控技能框架，GPU并行化机器人仿真器和基准测试平台。     |
 | Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
 | awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
+| 视觉SLAM十四讲                | 高翔                    | [GitHub](https://github.com/gaoxiang12/slambook2)             | SLAM领域经典中文教程及配套代码，视觉SLAM入门必读。           |
+| VINS-Mono                     | 香港科技大学            | [GitHub](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) | 鲁棒通用的单目视觉惯性状态估计器，VIO/SLAM领域经典项目。     |
+| VINS-Fusion                   | 香港科技大学            | [GitHub](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) | 基于优化的多传感器状态估计器，支持单/双目相机+IMU融合。       |
+| LIO-SAM                       | TixiaoShan             | [GitHub](https://github.com/TixiaoShan/LIO-SAM)              | 紧耦合激光惯性里程计（通过平滑和建图），被广泛引用的LiDAR SLAM方案。 |
+| FAST_LIO                      | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/FAST_LIO)               | 计算高效且鲁棒的LiDAR惯性里程计，港大MARS实验室代表作。      |
+| FAST-LIVO2                    | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/FAST-LIVO2)             | 快速、直接的LiDAR-惯性-视觉里程计，多传感器紧耦合方案。      |
+| R3LIVE                        | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/r3live)                 | 鲁棒、实时的RGB彩色LiDAR-惯性-视觉紧耦合状态估计与建图。    |
+| Apollo自动驾驶平台             | 百度                    | [GitHub](https://github.com/ApolloAuto/apollo)               | 百度Apollo开源自动驾驶平台，国内最大的自动驾驶开源生态系统。  |
+| UniAD                         | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/UniAD)             | CVPR 2023最佳论文，面向规划的统一自动驾驶框架，整合感知、预测和规划。 |
+| BEVFormer                     | 上海AI实验室/南京大学   | [GitHub](https://github.com/fundamentalvision/BEVFormer)      | ECCV 2022，基于纯相机的BEV感知框架，用于3D目标检测和语义地图分割。 |
 | 超迷你机械臂机器人项目        | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/Dummy-Robot)         | 视频介绍：[【自制】我造了一台 钢 铁 侠 的 机 械 臂 ！【硬核】](https://www.bilibili.com/video/BV12341117rG) |
 | MiniRover火星车               | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/MiniRover-Hardware)  | 自制火星车的开源资料。                                       |
 | X-Bot智能机械臂写字机器人     | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/X-Bot)               | 基于CoreXY结构的机械臂。                                     |
 | ONE-Robot独轮机器人           | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/ONE-Robot)           | 基于IMU和STM32的独轮自平衡机器人。                           |
+| ElectronBot迷你桌面机器人     | 稚晖君 (peng-zhihui)    | [项目主页](https://github.com/peng-zhihui/ElectronBot)       | 非常小巧的桌面机器人。                                       |
 | 解魔方机器人                  | 动力老男孩              | [项目主页](http://www.diy-robots.com/?page_id=46)            | 基于乐高的解魔方机器人。                                     |
 | RoboWiki (云飞机器人中文百科) | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/robowiki)             | 机器人领域的维基百科（公共知识编辑）。                       |
 | 基于树莓派的目标识别与追踪    | 云飞机器人实验室        | [GitHub](https://github.com/automaticdai/rpi-object-detection) | 基于树莓派 + Web Camera的视觉追踪项目。                      |
-| ElectronBot迷你桌面机器人     | 稚晖君 (peng-zhihui)    | [项目主页](https://github.com/peng-zhihui/ElectronBot)       | 非常小巧的桌面机器人。                                       |
 | OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
 | vlm_arm                       | 同济子豪兄 (TommyZihao) | [GitHub](https://github.com/TommyZihao/vlm_arm)              | 机械臂+大模型+多模态                                         |
 | 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
 | 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
+| Prometheus自主无人机系统       | 阿木实验室 (amov-lab)   | [GitHub](https://github.com/amov-lab/Prometheus)               | 面向自主无人机的开源软件系统，支持目标检测、SLAM导航、编队控制等。 |
+| EGO-Planner                   | 浙江大学FAST实验室      | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner)         | 高效的无人机梯度引导在线局部规划器。                         |
+| XTDrone无人机仿真平台          | robin-shaun            | [GitHub](https://github.com/robin-shaun/XTDrone)               | 基于PX4、ROS和Gazebo的无人机仿真平台，支持集群仿真。        |
 | Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
 | 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
 | 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
@@ -65,6 +82,15 @@
 | 项目名称     | 发起人/作者           | 项目地址                                                     | 项目介绍                                                     |
 | ------------ | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | DeepSeek     | DeepSeek-AI           | [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) \| [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) | DeepSeek 模型是近年来在自然语言处理（NLP）领域备受瞩目的开源大规模语言模型系列。其最新版本 DeepSeek-V3 采用了混合专家（Mixture-of-Experts，MoE）架构，拥有 6710 亿个参数，每个词元（token）激活 370 亿个参数。该模型在多项基准测试中表现出色，性能媲美 GPT-4 和 Claude 等领先的闭源模型。 |
+| PaddleOCR    | 百度                  | [GitHub](https://github.com/PaddlePaddle/PaddleOCR)          | 支持100+语言的OCR工具包，提供文字检测、识别、版面分析等全流程能力，是GitHub上最受欢迎的中国AI项目之一。 |
+| ncnn         | 腾讯                  | [GitHub](https://github.com/Tencent/ncnn)                    | 高性能神经网络推理框架，针对移动端和嵌入式设备优化，广泛应用于机器人端侧AI推理。 |
+| MNN          | 阿里巴巴              | [GitHub](https://github.com/alibaba/MNN)                     | 轻量级深度学习推理引擎，支持多种硬件后端，适用于移动端和边缘设备部署。 |
+| MiniCPM-o    | 面壁智能 (OpenBMB)    | [GitHub](https://github.com/OpenBMB/MiniCPM-o)               | Gemini 2.5 Flash级别的多模态语言模型，支持视觉、语音和全双工多模态直播，可在手机端运行。 |
+| YOLOX        | 旷视科技 (Megvii)     | [GitHub](https://github.com/Megvii-BaseDetection/YOLOX)      | 旷视科技开源的高性能无锚点YOLO目标检测器。                   |
+| InternVL     | 上海AI实验室          | [GitHub](https://github.com/OpenGVLab/InternVL)              | 开源多模态视觉-语言模型，对标GPT-4o，支持图像理解和多模态推理。 |
+| Yi           | 零一万物 (01.AI)      | [GitHub](https://github.com/01-ai/Yi)                        | 零一万物开源大语言模型系列，从头训练，支持中英双语。          |
+| CogVLM2      | 智谱AI                | [GitHub](https://github.com/THUDM/CogVLM2)                   | GPT4V级别的开源多模态视觉语言模型。                          |
+| Step1X-Edit  | 阶跃星辰 (StepFun)    | [GitHub](https://github.com/stepfun-ai/Step1X-Edit)          | SOTA开源图像编辑模型，性能对标GPT-4o和Gemini 2 Flash。       |
 | TVM          | 陈天奇                | [GitHub](https://github.com/apache/tvm)                      | *Apache TVM* 是一个用于CPU、GPU 和机器学习加速器的开源机器学习编译器框架，旨在让机器学习工程师能够在任何硬件后端上高效地优化和运行计算。 |
 | MxNet        | 李沐 (Mu Li)          | [GitHub](https://github.com/apache/incubator-mxnet)          | 深度学习编程框架，支持C++/Python/R。                         |
 | Caffe2       | 贾扬清 (Yangqing Jia) | [GitHub](https://github.com/facebookarchive/caffe2)          | 深度学习编程框架，支持C++/Python/Matlab。现已与Pytorch合并。 |
@@ -83,4 +109,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年1月19日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年2月18日
