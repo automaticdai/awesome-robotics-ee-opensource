@@ -49,6 +49,11 @@
 | 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
 | 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
 | 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
+| Genesis                        | 胡渊鸣等 (CMU)           | [GitHub](https://github.com/Genesis-Embodied-AI/Genesis)        | 面向机器人与具身AI的通用物理仿真引擎，纯Python实现，速度可达传统引擎数万倍，支持多种材料仿真。 |
+| RoboticsDiffusionTransformer (RDT-1B) | 清华大学          | [GitHub](https://github.com/thu-ml/RoboticsDiffusionTransformer) | 双臂机器人操控基础模型，采用扩散Transformer架构，在多种双臂操控任务上取得SOTA效果。 |
+| Open-TeleVision                | 多校联合                  | [GitHub](https://github.com/OpenTeleVision/TeleVision)           | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
+| AnyGrasp                       | 上海AI实验室              | [GitHub](https://github.com/graspnet/anygrasp_sdk)               | 高效通用的6自由度抓取位姿估计算法，支持任意物体的机器人抓取检测。 |
+| Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
 
 ## 2. 嵌入式系统项目 | Embedded System
 
@@ -66,6 +71,7 @@
 | 树莓派温湿度气象站                  | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/rpi-environmental-sensing) | 基于树莓派的开源温湿度气象站。                               |
 | ESP32智能家居开发板                | 乐鑫科技 (Espressif)      | [GitHub](https://github.com/espressif/esp-idf)                | ESP32系列芯片的官方开发框架和示例项目。                     |
 | LicheeRV开发板项目                 | 矽递科技 (Sipeed)        | [GitHub](https://github.com/sipeed/LicheeRV-Nano-Build)       | LicheeRV-Nano的构建项目和开发工具。                         |
+| MaixPy                             | 矽递科技 (Sipeed)        | [GitHub](https://github.com/sipeed/MaixPy)                    | 基于RISC-V平台的MicroPython实现，支持K210/K230等芯片上的嵌入式机器视觉与AI推理。  |
 
 ## 3. 处理器架构及操作系统 | Arch & OS
 
@@ -76,6 +82,7 @@
 | RT-Thread                   | Bernard Xiong | [GitHub](https://github.com/RT-Thread/rt-thread)     | RT-Thread诞生于2006年，是一款以开源、中立、社区化发展起来的物联网操作系统。 |
 | TencentOS Tiny              | 腾讯          | [GitHub](https://github.com/Tencent/TencentOS-tiny)  | 腾讯物联网终端操作系统（TencentOS tiny）是腾讯面向物联网领域开发的实时操作系统，具有低功耗，低资源占用，模块化，安全可靠等特点，可有效提升物联网终端产品开发效率。TencentOS tiny 提供精简的 RTOS 内核，内核组件可裁剪可配置，可快速移植到多种主流 MCU 及模组芯片上。而且，基于RTOS内核提供了丰富的物联网组件，内部集成主流物联网协议栈（如 CoAP/MQTT/TLS/DTLS/LoRaWAN/NB-IoT 等），可助力物联网终端设备及业务快速接入腾讯云物联网平台。 |
 | AimRT | AimRT | [GitHub](https://github.com/AimRT/AimRT) | AimRT 是一个面向现代机器人领域的运行时开发框架。 它基于 Modern C++ 开发，轻量且易于部署，在资源管控、异步编程、部署配置等方面具有更现代的设计。AimRT 致力于整合机器人端侧、边缘端、云端等各种部署场景的研发。 它服务于现代基于人工智能和云的机器人应用，提供完善的调试和性能分析工具链，以及良好的可观测性支持。AimRT 还提供了全面的插件开发接口，具有高度可扩展性。 它与 ROS2、HTTP、Grpc 等传统机器人生态系统或云服务生态系统兼容，并支持对现有系统的逐步升级。|
+| OpenHarmony | 华为/开放原子基金会 | [Gitee](https://gitee.com/openharmony) | 面向全场景智能终端的开源分布式操作系统，支持从嵌入式设备到手机等多种形态，已广泛应用于IoT和机器人产品。 |
 
 ## 4. 机器学习项目 | ML
 
@@ -102,6 +109,15 @@
 | Baichuan     | 百川智能              | [GitHub](https://github.com/baichuan-inc/Baichuan2)          | 百川智能开源大语言模型。                                     |
 | InternLM     | 上海AI实验室          | [GitHub](https://github.com/InternLM/InternLM)               | 上海AI实验室开源的大语言模型。                               |
 | Qwen2-VL     | 阿里云                | [GitHub](https://github.com/QwenLM/Qwen2-VL)                 | 阿里云通义千问多模态视觉-语言模型，广泛应用于VLA模型开发。   |
+| Wan2.1       | 阿里巴巴              | [GitHub](https://github.com/Wan-Video/Wan2.1)                 | 阿里巴巴开源的高质量视频生成大模型，支持文生视频，性能对标商业顶级模型。            |
+| HunyuanVideo | 腾讯                  | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanVideo)     | 腾讯开源的高分辨率视频生成模型，支持文生视频和图生视频，视频质量业界领先。          |
+| ControlNet   | 张吕敏 (Lvmin Zhang)  | [GitHub](https://github.com/lllyasviel/ControlNet)            | 为扩散模型添加条件控制的神经网络结构，支持姿态、深度、边缘等多种控制信号，极具影响力。 |
+| AnimateDiff  | 郭宇威等              | [GitHub](https://github.com/guoyww/AnimateDiff)               | 即插即用的视频动画模块，无需额外训练即可将现有图像扩散模型转化为视频生成器。        |
+| CogVideoX    | 智谱AI/清华大学        | [GitHub](https://github.com/THUDM/CogVideo)                   | 开源视频生成大模型，生成质量优秀，支持文生视频和图生视频。                        |
+| Janus        | DeepSeek              | [GitHub](https://github.com/deepseek-ai/Janus)                | 统一多模态理解与生成的框架，通过解耦视觉编码解决理解与生成任务之间的冲突。          |
+| GroundingDINO | IDEA Research        | [GitHub](https://github.com/IDEA-Research/GroundingDINO)      | 开放集目标检测框架，通过自然语言描述实现任意类别目标的定位，零样本检测能力强。       |
+| FunASR       | 阿里达摩院            | [GitHub](https://github.com/modelscope/FunASR)                | 工业级端到端语音识别工具链，支持语音识别、标点恢复、说话人分离等任务。              |
+| ChatTTS      | 2noise                | [GitHub](https://github.com/2noise/ChatTTS)                   | 专为对话设计的高质量中英文语音合成模型，支持细粒度韵律控制（停顿、笑声等）。        |
 
 ---
 
@@ -109,4 +125,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年2月18日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年2月20日
