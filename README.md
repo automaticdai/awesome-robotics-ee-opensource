@@ -16,6 +16,7 @@
 | AgiBot X1开源人形机器人        | 智元机器人 (AgibotTech)  | [推理](https://github.com/AgibotTech/agibot_x1_infer) \| [训练](https://github.com/AgibotTech/agibot_x1_train) \| [硬件](https://github.com/AgibotTech/agibot_x1_hardware) | 智元机器人X1完整开源人形机器人项目，包含推理模块、强化学习训练代码和全套硬件设计资料。 |
 | AgiBot-World                  | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/AgiBot-World)      | IROS 2025最佳论文候选，面向可扩展和智能具身系统的大规模操控平台。 |
 | unitree_rl_gym                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym)   | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。      |
+| unitree_rl_lab                | 宇树科技 (Unitree)     | [IsaacLab](https://github.com/unitreerobotics/unitree_rl_lab) \| [MuJoCo](https://github.com/unitreerobotics/unitree_rl_mjlab) | 宇树科技机器人强化学习实现，分别基于Isaac Lab和MuJoCo。      |
 | ManiSkill                     | haosulab (Hillbot)     | [GitHub](https://github.com/haosulab/ManiSkill)               | SAPIEN操控技能框架，GPU并行化机器人仿真器和基准测试平台。     |
 | Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
 | awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
@@ -46,6 +47,13 @@
 | XTDrone无人机仿真平台          | robin-shaun            | [GitHub](https://github.com/robin-shaun/XTDrone)               | 基于PX4、ROS和Gazebo的无人机仿真平台，支持集群仿真。        |
 | Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
 | 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
+| 宇树科技机器人SDK2             | 宇树科技 (Unitree)     | [C++](https://github.com/unitreerobotics/unitree_sdk2) \| [Python](https://github.com/unitreerobotics/unitree_sdk2_python) | 宇树科技新一代机器人SDK，基于CycloneDDS，支持Go2/B2/H1/G1等机器人的开发与控制。 |
+| 宇树科技ROS2                   | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros2)      | 宇树科技Go2/B2机器人的ROS2开发包，接口与unitree_sdk2一致。  |
+| 宇树科技MuJoCo仿真             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_mujoco)    | 基于MuJoCo的宇树机器人仿真环境，集成unitree_sdk2，包含MJCF模型和地形生成工具。 |
+| 宇树科技Isaac Lab仿真          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_sim_isaaclab) | 基于Isaac Lab的宇树机器人仿真环境，支持数据采集、回放和模型验证。 |
+| 宇树科技XR遥操作               | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/xr_teleoperate)    | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
+| 宇树科技机器人控制教程         | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_guide)     | 宇树科技四足机器人控制的开源教程项目，适合入门学习与参考。   |
+| 宇树科技4D LiDAR SLAM          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
 | 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
 | 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
 | 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
@@ -88,6 +96,9 @@
 
 | 项目名称     | 发起人/作者           | 项目地址                                                     | 项目介绍                                                     |
 | ------------ | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| UnifoLM世界模型                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unifolm-world-model-action) | 宇树科技开源的世界模型-动作架构(UnifoLM-WMA)，支持跨多种机器人形态的通用学习。 |
+| UnifoLM VLA                    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unifolm-vla)      | 面向通用人形机器人操作的视觉-语言-动作大模型(UnifoLM-VLA)。  |
+| unitree_IL_lerobot             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_IL_lerobot) | 基于LeRobot框架的模仿学习工具，用于G1双臂灵巧手数据的训练与测试。 |
 | DeepSeek     | DeepSeek-AI           | [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) \| [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) | DeepSeek 模型是近年来在自然语言处理（NLP）领域备受瞩目的开源大规模语言模型系列。其最新版本 DeepSeek-V3 采用了混合专家（Mixture-of-Experts，MoE）架构，拥有 6710 亿个参数，每个词元（token）激活 370 亿个参数。该模型在多项基准测试中表现出色，性能媲美 GPT-4 和 Claude 等领先的闭源模型。 |
 | PaddleOCR    | 百度                  | [GitHub](https://github.com/PaddlePaddle/PaddleOCR)          | 支持100+语言的OCR工具包，提供文字检测、识别、版面分析等全流程能力，是GitHub上最受欢迎的中国AI项目之一。 |
 | ncnn         | 腾讯                  | [GitHub](https://github.com/Tencent/ncnn)                    | 高性能神经网络推理框架，针对移动端和嵌入式设备优化，广泛应用于机器人端侧AI推理。 |
