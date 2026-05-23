@@ -62,6 +62,14 @@
 | Open-TeleVision                | 多校联合                  | [GitHub](https://github.com/OpenTeleVision/TeleVision)           | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | AnyGrasp                       | 上海AI实验室              | [GitHub](https://github.com/graspnet/anygrasp_sdk)               | 高效通用的6自由度抓取位姿估计算法，支持任意物体的机器人抓取检测。 |
 | Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
+| OpenLoong青龙人形机器人         | 上海人形机器人创新中心/开放原子基金会 | [GitHub](https://github.com/loongOpen) | 全栈开源人形机器人项目，包含动力学控制(MPC+WBC)、硬件设计、训练平台(Gymloong/MiniGym)和大规模技能调度框架(Brain)。 |
+| Fourier N1                     | 傅利叶智能 (FFTAI)        | [GitHub](https://github.com/FFTAI)                              | 全球首个全开源人形机器人，公开全套硬件设计、BOM、装配指南和Fourier-GRX SDK，1.3米/38公斤/3.5m/s速度。 |
+| EngineAI Humanoid              | EngineAI (松延动力)       | [GitHub](https://github.com/engineai-robotics/engineai_humanoid) | EngineAI双足机器人(SA01/PM01)的开源运动控制算法，采用端到端神经网络实现拟人步态。 |
+| Booster Gym                    | Booster Robotics (加速进化) | [GitHub](https://github.com/BoosterRobotics)                  | Booster T1/K1人形机器人的端到端强化学习运动控制框架，含RoboCup自主踢球Demo。 |
+| RoboBrain 2.5                  | 智源研究院 (FlagOpen)/北京大学 | [GitHub](https://github.com/FlagOpen/RoboBrain2.5)           | 新一代具身AI基础模型，支持精确3D空间推理、深度感知坐标预测和时序建模，CVPR 2025延续工作。 |
+| WholebodyVLA                   | 上海AI实验室 (OpenDriveLab) | [GitHub](https://github.com/OpenDriveLab/WholebodyVLA)        | ICLR 2026，面向人形机器人全身移动操作控制的统一潜空间VLA模型。 |
+| X-VLA                          | 2toinf 等                | [GitHub](https://github.com/2toinf/X-VLA)                       | ICLR 2026，软提示Transformer跨形态VLA模型，AgiBot World挑战赛(IROS 2025)冠军。 |
+| AgileX Cobot Magic             | 松灵机器人 (AgileX)       | [GitHub](https://github.com/agilexrobotics)                     | 基于Mobile ALOHA架构的开源双臂移动操作平台，含PiPER机械臂、AGV底盘和深度相机。 |
 
 ## 2. 嵌入式系统项目 | Embedded System
 
@@ -129,6 +137,11 @@
 | GroundingDINO | IDEA Research        | [GitHub](https://github.com/IDEA-Research/GroundingDINO)      | 开放集目标检测框架，通过自然语言描述实现任意类别目标的定位，零样本检测能力强。       |
 | FunASR       | 阿里达摩院            | [GitHub](https://github.com/modelscope/FunASR)                | 工业级端到端语音识别工具链，支持语音识别、标点恢复、说话人分离等任务。              |
 | ChatTTS      | 2noise                | [GitHub](https://github.com/2noise/ChatTTS)                   | 专为对话设计的高质量中英文语音合成模型，支持细粒度韵律控制（停顿、笑声等）。        |
+| Kimi K2      | 月之暗面 (Moonshot AI) | [GitHub](https://github.com/MoonshotAI/Kimi-K2)               | 1万亿参数MoE开源大模型(激活32B)，在SWE-Bench Pro等编码与智能体任务上对标GPT-5.5，含K2 Thinking推理版本。 |
+| MiniMax-M2   | MiniMax (稀宇科技)     | [GitHub](https://github.com/MiniMax-AI/MiniMax-M2)            | 230B参数MoE模型(激活10B)，MIT许可，Artificial Analysis智能指数开源模型全球第一，专为编码与智能体工具调用优化。 |
+| GLM-4.6V     | 智谱AI (Z.ai)         | [GitHub](https://github.com/zai-org/GLM-V)                    | 多模态视觉推理大模型，支持思维链推理与可扩展强化学习，含106B-A12B云端版与9B-Flash端侧版。 |
+| Hunyuan3D-2.1 | 腾讯混元               | [GitHub](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1)    | 首个生产级开源3D资产生成模型，支持图像到高保真3D+PBR材质，含完整训练代码与权重。 |
+| HunyuanWorld | 腾讯混元               | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0) | 首个开源、可仿真、沉浸式3D世界生成模型，从文本或图像生成可交互的3D场景。 |
 
 ---
 
@@ -136,4 +149,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年2月20日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年5月23日
