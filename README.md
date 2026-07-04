@@ -70,6 +70,19 @@
 | WholebodyVLA                   | 上海AI实验室 (OpenDriveLab) | [GitHub](https://github.com/OpenDriveLab/WholebodyVLA)        | ICLR 2026，面向人形机器人全身移动操作控制的统一潜空间VLA模型。 |
 | X-VLA                          | 2toinf 等                | [GitHub](https://github.com/2toinf/X-VLA)                       | ICLR 2026，软提示Transformer跨形态VLA模型，AgiBot World挑战赛(IROS 2025)冠军。 |
 | AgileX Cobot Magic             | 松灵机器人 (AgileX)       | [GitHub](https://github.com/agilexrobotics)                     | 基于Mobile ALOHA架构的开源双臂移动操作平台，含PiPER机械臂、AGV底盘和深度相机。 |
+| RoboTwin双臂操作基准           | 港大/上海AI Lab/松灵 (陈天行等) | [GitHub](https://github.com/RoboTwin-Platform/RoboTwin)     | 面向双臂协作操作的可扩展数据生成器与基准平台，内置强域随机化与50+任务，支持多种主流策略基线评测。CVPR 2025 Highlight。 |
+| WALL-OSS具身基础模型           | 自变量机器人 (X Square Robot)  | [GitHub](https://github.com/X-Square-Robot/wall-x)          | 自变量机器人开源的WALL系列具身基础模型训练与推理框架，含WALL-OSS等VLA模型，预训练即可直接上真机执行操作。 |
+| Galaxea G0 / GalaxeaVLA        | 星海图 (Galaxea AI)            | [GitHub](https://github.com/OpenGalaxea/GalaxeaVLA)         | 星海图开源的双系统VLA模型G0/G0.5系列与500+小时真实场景开放世界数据集，支持长程移动操作的预训练、微调与真机部署。 |
+| OpenWBT人形全身遥操作          | 银河通用 & 清华大学            | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT)  | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
+| GraspVLA抓取基础模型           | 银河通用 & 北京大学 (PKU-EPIC) | [GitHub](https://github.com/PKU-EPIC/GraspVLA)              | 基于十亿帧合成数据SynGrasp-1B预训练的抓取基础模型，纯仿真训练即可零样本迁移到真实世界开放词汇抓取。CoRL 2025。 |
+| InternVLA-M1                   | 上海人工智能实验室 (InternRobotics) | [GitHub](https://github.com/InternRobotics/InternVLA-M1) | 空间引导的视觉-语言-动作框架，基于Qwen2.5-VL统一空间定位与动作头训练，面向通用机器人操作策略，MIT协议开源。 |
+| DexGraspVLA灵巧抓取            | 灵初智能 (PsiBot) & 北京大学   | [GitHub](https://github.com/Psi-Robot/DexGraspVLA)         | 层级式灵巧抓取VLA框架，以VLM作高层规划器、扩散策略作低层控制器，杂乱场景灵巧手抓取成功率超90%。AAAI 2026 Oral。 |
+| XLeRobot低成本双臂家用机器人   | 王高天 (Rice University)       | [GitHub](https://github.com/Vector-Wangel/XLeRobot)        | 约660美元的开源双臂移动家用机器人，兼容LeRobot生态，含3D打印硬件、仿真环境与VR/键盘/手柄遥操作，数小时可组装。 |
+| 萝博头 Roboto Origin           | 萝卜派对 (RoboParty)           | [GitHub](https://github.com/Roboparty/roboto_origin)       | 全栈开源的双足人形机器人，开放全部结构图纸、电子、训练与ROS2部署代码，零件可全部通过淘宝采购复刻。 |
+| DiffusionDrive端到端自动驾驶   | 华中科技大学 & 地平线 (hustvl) | [GitHub](https://github.com/hustvl/DiffusionDrive)         | 面向实时端到端自动驾驶的截断扩散策略模型，NAVSIM基准达88.1 PDMS且以45 FPS实时运行，CVPR 2025 Highlight。 |
+| MiMo-Embodied跨具身大模型      | 小米 (Xiaomi MiMo)             | [GitHub](https://github.com/XiaomiMiMo/MiMo-Embodied)      | 小米开源的首个跨具身基础模型，统一自动驾驶与具身智能两大领域，在29项具身与驾驶基准上取得领先性能。 |
+| RynnVLA-001                    | 阿里巴巴达摩院                 | [GitHub](https://github.com/alibaba-damo-academy/RynnVLA-001) | 基于视频生成模型预训练的VLA模型，利用人类第一视角视频演示提升机械臂操作能力，已开源训练代码与预训练权重。ICRA 2026。 |
+| EmbodiedGen生成式3D世界引擎    | 地平线机器人 (Horizon Robotics) | [GitHub](https://github.com/HorizonRobotics/EmbodiedGen) | 面向具身智能的生成式3D世界引擎，将文本、图像编译为物理合理、可直接仿真的3D资产与场景，支持Isaac/MuJoCo/SAPIEN/Genesis等。 |
 
 ## 2. 嵌入式系统项目 | Embedded System
 
