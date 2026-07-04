@@ -8,18 +8,78 @@
 
 ## 1. 机器人项目 | Robots
 
+**子分类**：[1.1 具身智能与VLA大模型](#11-具身智能与vla大模型) · [1.2 人形与足式机器人](#12-人形与足式机器人) · [1.3 机械臂、抓取与操作](#13-机械臂抓取与操作) · [1.4 无人机与空中机器人](#14-无人机与空中机器人) · [1.5 自动驾驶](#15-自动驾驶) · [1.6 SLAM、感知与状态估计](#16-slam感知与状态估计) · [1.7 仿真、数据集与遥操作](#17-仿真数据集与遥操作) · [1.8 SDK、工具、DIY创客与资源](#18-sdk工具diy创客与资源)
+
+### 1.1 具身智能与VLA大模型
+
 | 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
 | ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | XR-1 VLA模型                  | 北京人形机器人创新中心  | [GitHub](https://github.com/Open-X-Humanoid/XR-1)            | 中国首个国标级VLA大模型，支持跨机器人平台操作，包含RoboMIND 2.0数据集和ArtVIP资产。 |
 | DexVLA                        | 多机构联合             | [GitHub](https://github.com/juruobenruo/DexVLA)              | 基于Qwen2-VL的视觉-语言-动作模型，支持单臂、双臂和灵巧手等多种机器人形态的通用控制。 |
 | ManiFoundation                | 新加坡国立大学/清华大学 | [GitHub](https://github.com/NUS-LinS-Lab/ManiFM)             | 通用机器人操作基础模型，通过接触合成实现对刚性、铰接和可变形物体的操作。 |
+| RoboticsDiffusionTransformer (RDT-1B) | 清华大学          | [GitHub](https://github.com/thu-ml/RoboticsDiffusionTransformer) | 双臂机器人操控基础模型，采用扩散Transformer架构，在多种双臂操控任务上取得SOTA效果。 |
+| RoboBrain 2.5                  | 智源研究院 (FlagOpen)/北京大学 | [GitHub](https://github.com/FlagOpen/RoboBrain2.5)           | 新一代具身AI基础模型，支持精确3D空间推理、深度感知坐标预测和时序建模，CVPR 2025延续工作。 |
+| WholebodyVLA                   | 上海AI实验室 (OpenDriveLab) | [GitHub](https://github.com/OpenDriveLab/WholebodyVLA)        | ICLR 2026，面向人形机器人全身移动操作控制的统一潜空间VLA模型。 |
+| X-VLA                          | 2toinf 等                | [GitHub](https://github.com/2toinf/X-VLA)                       | ICLR 2026，软提示Transformer跨形态VLA模型，AgiBot World挑战赛(IROS 2025)冠军。 |
+| WALL-OSS具身基础模型           | 自变量机器人 (X Square Robot)  | [GitHub](https://github.com/X-Square-Robot/wall-x)          | 自变量机器人开源的WALL系列具身基础模型训练与推理框架，含WALL-OSS等VLA模型，预训练即可直接上真机执行操作。 |
+| Galaxea G0 / GalaxeaVLA        | 星海图 (Galaxea AI)            | [GitHub](https://github.com/OpenGalaxea/GalaxeaVLA)         | 星海图开源的双系统VLA模型G0/G0.5系列与500+小时真实场景开放世界数据集，支持长程移动操作的预训练、微调与真机部署。 |
+| GraspVLA抓取基础模型           | 银河通用 & 北京大学 (PKU-EPIC) | [GitHub](https://github.com/PKU-EPIC/GraspVLA)              | 基于十亿帧合成数据SynGrasp-1B预训练的抓取基础模型，纯仿真训练即可零样本迁移到真实世界开放词汇抓取。CoRL 2025。 |
+| InternVLA-M1                   | 上海人工智能实验室 (InternRobotics) | [GitHub](https://github.com/InternRobotics/InternVLA-M1) | 空间引导的视觉-语言-动作框架，基于Qwen2.5-VL统一空间定位与动作头训练，面向通用机器人操作策略，MIT协议开源。 |
+| DexGraspVLA灵巧抓取            | 灵初智能 (PsiBot) & 北京大学   | [GitHub](https://github.com/Psi-Robot/DexGraspVLA)         | 层级式灵巧抓取VLA框架，以VLM作高层规划器、扩散策略作低层控制器，杂乱场景灵巧手抓取成功率超90%。AAAI 2026 Oral。 |
+| MiMo-Embodied跨具身大模型      | 小米 (Xiaomi MiMo)             | [GitHub](https://github.com/XiaomiMiMo/MiMo-Embodied)      | 小米开源的首个跨具身基础模型，统一自动驾驶与具身智能两大领域，在29项具身与驾驶基准上取得领先性能。 |
+| RynnVLA-001                    | 阿里巴巴达摩院                 | [GitHub](https://github.com/alibaba-damo-academy/RynnVLA-001) | 基于视频生成模型预训练的VLA模型，利用人类第一视角视频演示提升机械臂操作能力，已开源训练代码与预训练权重。ICRA 2026。 |
+
+### 1.2 人形与足式机器人
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | AgiBot X1开源人形机器人        | 智元机器人 (AgibotTech)  | [推理](https://github.com/AgibotTech/agibot_x1_infer) \| [训练](https://github.com/AgibotTech/agibot_x1_train) \| [硬件](https://github.com/AgibotTech/agibot_x1_hardware) | 智元机器人X1完整开源人形机器人项目，包含推理模块、强化学习训练代码和全套硬件设计资料。 |
-| AgiBot-World                  | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/AgiBot-World)      | IROS 2025最佳论文候选，面向可扩展和智能具身系统的大规模操控平台。 |
+| OpenLoong青龙人形机器人         | 上海人形机器人创新中心/开放原子基金会 | [GitHub](https://github.com/loongOpen) | 全栈开源人形机器人项目，包含动力学控制(MPC+WBC)、硬件设计、训练平台(Gymloong/MiniGym)和大规模技能调度框架(Brain)。 |
+| Fourier N1                     | 傅利叶智能 (FFTAI)        | [GitHub](https://github.com/FFTAI)                              | 全球首个全开源人形机器人，公开全套硬件设计、BOM、装配指南和Fourier-GRX SDK，1.3米/38公斤/3.5m/s速度。 |
+| EngineAI Humanoid              | EngineAI (松延动力)       | [GitHub](https://github.com/engineai-robotics/engineai_humanoid) | EngineAI双足机器人(SA01/PM01)的开源运动控制算法，采用端到端神经网络实现拟人步态。 |
+| Booster Gym                    | Booster Robotics (加速进化) | [GitHub](https://github.com/BoosterRobotics)                  | Booster T1/K1人形机器人的端到端强化学习运动控制框架，含RoboCup自主踢球Demo。 |
+| Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
+| 萝博头 Roboto Origin           | 萝卜派对 (RoboParty)           | [GitHub](https://github.com/Roboparty/roboto_origin)       | 全栈开源的双足人形机器人，开放全部结构图纸、电子、训练与ROS2部署代码，零件可全部通过淘宝采购复刻。 |
+| OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
+| 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
 | unitree_rl_gym                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym)   | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。      |
 | unitree_rl_lab                | 宇树科技 (Unitree)     | [IsaacLab](https://github.com/unitreerobotics/unitree_rl_lab) \| [MuJoCo](https://github.com/unitreerobotics/unitree_rl_mjlab) | 宇树科技机器人强化学习实现，分别基于Isaac Lab和MuJoCo。      |
+| Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
+
+### 1.3 机械臂、抓取与操作
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ManiSkill                     | haosulab (Hillbot)     | [GitHub](https://github.com/haosulab/ManiSkill)               | SAPIEN操控技能框架，GPU并行化机器人仿真器和基准测试平台。     |
-| Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
-| awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
+| AnyGrasp                       | 上海AI实验室              | [GitHub](https://github.com/graspnet/anygrasp_sdk)               | 高效通用的6自由度抓取位姿估计算法，支持任意物体的机器人抓取检测。 |
+| vlm_arm                       | 同济子豪兄 (TommyZihao) | [GitHub](https://github.com/TommyZihao/vlm_arm)              | 机械臂+大模型+多模态                                         |
+| AgileX Cobot Magic             | 松灵机器人 (AgileX)       | [GitHub](https://github.com/agilexrobotics)                     | 基于Mobile ALOHA架构的开源双臂移动操作平台，含PiPER机械臂、AGV底盘和深度相机。 |
+| RoboTwin双臂操作基准           | 港大/上海AI Lab/松灵 (陈天行等) | [GitHub](https://github.com/RoboTwin-Platform/RoboTwin)     | 面向双臂协作操作的可扩展数据生成器与基准平台，内置强域随机化与50+任务，支持多种主流策略基线评测。CVPR 2025 Highlight。 |
+
+### 1.4 无人机与空中机器人
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Prometheus自主无人机系统       | 阿木实验室 (amov-lab)   | [GitHub](https://github.com/amov-lab/Prometheus)               | 面向自主无人机的开源软件系统，支持目标检测、SLAM导航、编队控制等。 |
+| EGO-Planner                   | 浙江大学FAST实验室      | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner)         | 高效的无人机梯度引导在线局部规划器。                         |
+| XTDrone无人机仿真平台          | robin-shaun            | [GitHub](https://github.com/robin-shaun/XTDrone)               | 基于PX4、ROS和Gazebo的无人机仿真平台，支持集群仿真。        |
+| 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
+| 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
+| 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
+
+### 1.5 自动驾驶
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Apollo自动驾驶平台             | 百度                    | [GitHub](https://github.com/ApolloAuto/apollo)               | 百度Apollo开源自动驾驶平台，国内最大的自动驾驶开源生态系统。  |
+| UniAD                         | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/UniAD)             | CVPR 2023最佳论文，面向规划的统一自动驾驶框架，整合感知、预测和规划。 |
+| BEVFormer                     | 上海AI实验室/南京大学   | [GitHub](https://github.com/fundamentalvision/BEVFormer)      | ECCV 2022，基于纯相机的BEV感知框架，用于3D目标检测和语义地图分割。 |
+| DiffusionDrive端到端自动驾驶   | 华中科技大学 & 地平线 (hustvl) | [GitHub](https://github.com/hustvl/DiffusionDrive)         | 面向实时端到端自动驾驶的截断扩散策略模型，NAVSIM基准达88.1 PDMS且以45 FPS实时运行，CVPR 2025 Highlight。 |
+
+### 1.6 SLAM、感知与状态估计
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 视觉SLAM十四讲                | 高翔                    | [GitHub](https://github.com/gaoxiang12/slambook2)             | SLAM领域经典中文教程及配套代码，视觉SLAM入门必读。           |
 | VINS-Mono                     | 香港科技大学            | [GitHub](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) | 鲁棒通用的单目视觉惯性状态估计器，VIO/SLAM领域经典项目。     |
 | VINS-Fusion                   | 香港科技大学            | [GitHub](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) | 基于优化的多传感器状态估计器，支持单/双目相机+IMU融合。       |
@@ -27,62 +87,41 @@
 | FAST_LIO                      | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/FAST_LIO)               | 计算高效且鲁棒的LiDAR惯性里程计，港大MARS实验室代表作。      |
 | FAST-LIVO2                    | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/FAST-LIVO2)             | 快速、直接的LiDAR-惯性-视觉里程计，多传感器紧耦合方案。      |
 | R3LIVE                        | 港大MARS实验室          | [GitHub](https://github.com/hku-mars/r3live)                 | 鲁棒、实时的RGB彩色LiDAR-惯性-视觉紧耦合状态估计与建图。    |
-| Apollo自动驾驶平台             | 百度                    | [GitHub](https://github.com/ApolloAuto/apollo)               | 百度Apollo开源自动驾驶平台，国内最大的自动驾驶开源生态系统。  |
-| UniAD                         | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/UniAD)             | CVPR 2023最佳论文，面向规划的统一自动驾驶框架，整合感知、预测和规划。 |
-| BEVFormer                     | 上海AI实验室/南京大学   | [GitHub](https://github.com/fundamentalvision/BEVFormer)      | ECCV 2022，基于纯相机的BEV感知框架，用于3D目标检测和语义地图分割。 |
+| 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
+| 宇树科技4D LiDAR SLAM          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
+
+### 1.7 仿真、数据集与遥操作
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Genesis                        | 胡渊鸣等 (CMU)           | [GitHub](https://github.com/Genesis-Embodied-AI/Genesis)        | 面向机器人与具身AI的通用物理仿真引擎，纯Python实现，速度可达传统引擎数万倍，支持多种材料仿真。 |
+| AgiBot-World                  | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/AgiBot-World)      | IROS 2025最佳论文候选，面向可扩展和智能具身系统的大规模操控平台。 |
+| EmbodiedGen生成式3D世界引擎    | 地平线机器人 (Horizon Robotics) | [GitHub](https://github.com/HorizonRobotics/EmbodiedGen) | 面向具身智能的生成式3D世界引擎，将文本、图像编译为物理合理、可直接仿真的3D资产与场景，支持Isaac/MuJoCo/SAPIEN/Genesis等。 |
+| 宇树科技MuJoCo仿真             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_mujoco)    | 基于MuJoCo的宇树机器人仿真环境，集成unitree_sdk2，包含MJCF模型和地形生成工具。 |
+| 宇树科技Isaac Lab仿真          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_sim_isaaclab) | 基于Isaac Lab的宇树机器人仿真环境，支持数据采集、回放和模型验证。 |
+| Open-TeleVision                | 多校联合                  | [GitHub](https://github.com/OpenTeleVision/TeleVision)           | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
+| 宇树科技XR遥操作               | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/xr_teleoperate)    | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
+| OpenWBT人形全身遥操作          | 银河通用 & 清华大学            | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT)  | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
+
+### 1.8 SDK、工具、DIY创客与资源
+
+| 项目名称                      | 发起人/作者             | 项目地址                                                     | 项目介绍                                                     |
+| ----------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 宇树科技机器人SDK2             | 宇树科技 (Unitree)     | [C++](https://github.com/unitreerobotics/unitree_sdk2) \| [Python](https://github.com/unitreerobotics/unitree_sdk2_python) | 宇树科技新一代机器人SDK，基于CycloneDDS，支持Go2/B2/H1/G1等机器人的开发与控制。 |
+| 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
+| 宇树科技ROS2                   | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros2)      | 宇树科技Go2/B2机器人的ROS2开发包，接口与unitree_sdk2一致。  |
+| 宇树科技机器人控制教程         | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_guide)     | 宇树科技四足机器人控制的开源教程项目，适合入门学习与参考。   |
 | 超迷你机械臂机器人项目        | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/Dummy-Robot)         | 视频介绍：[【自制】我造了一台 钢 铁 侠 的 机 械 臂 ！【硬核】](https://www.bilibili.com/video/BV12341117rG) |
 | MiniRover火星车               | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/MiniRover-Hardware)  | 自制火星车的开源资料。                                       |
 | X-Bot智能机械臂写字机器人     | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/X-Bot)               | 基于CoreXY结构的机械臂。                                     |
 | ONE-Robot独轮机器人           | 稚晖君 (peng-zhihui)    | [GitHub](https://github.com/peng-zhihui/ONE-Robot)           | 基于IMU和STM32的独轮自平衡机器人。                           |
 | ElectronBot迷你桌面机器人     | 稚晖君 (peng-zhihui)    | [项目主页](https://github.com/peng-zhihui/ElectronBot)       | 非常小巧的桌面机器人。                                       |
 | 解魔方机器人                  | 动力老男孩              | [项目主页](http://www.diy-robots.com/?page_id=46)            | 基于乐高的解魔方机器人。                                     |
-| RoboWiki (云飞机器人中文百科) | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/robowiki)             | 机器人领域的维基百科（公共知识编辑）。                       |
-| 基于树莓派的目标识别与追踪    | 云飞机器人实验室        | [GitHub](https://github.com/automaticdai/rpi-object-detection) | 基于树莓派 + Web Camera的视觉追踪项目。                      |
-| OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
-| vlm_arm                       | 同济子豪兄 (TommyZihao) | [GitHub](https://github.com/TommyZihao/vlm_arm)              | 机械臂+大模型+多模态                                         |
-| 小觅双目相机系列               | 小觅智能 (MYNTAI)      | [GitHub](https://github.com/slightech/MYNT-EYE-S-SDK)          | 小觅双目相机系列，提供完整的SLAM和视觉算法解决方案。       |
-| 大疆Tello无人机SDK             | 大疆创新 (DJI)         | [GitHub](https://github.com/dji-sdk/Tello-Python)              | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。  |
-| Prometheus自主无人机系统       | 阿木实验室 (amov-lab)   | [GitHub](https://github.com/amov-lab/Prometheus)               | 面向自主无人机的开源软件系统，支持目标检测、SLAM导航、编队控制等。 |
-| EGO-Planner                   | 浙江大学FAST实验室      | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner)         | 高效的无人机梯度引导在线局部规划器。                         |
-| XTDrone无人机仿真平台          | robin-shaun            | [GitHub](https://github.com/robin-shaun/XTDrone)               | 基于PX4、ROS和Gazebo的无人机仿真平台，支持集群仿真。        |
-| Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
-| 宇树科技四足机器人             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros)       | 宇树科技四足机器人Go1/Go2的ROS驱动包。                     |
-| 宇树科技机器人SDK2             | 宇树科技 (Unitree)     | [C++](https://github.com/unitreerobotics/unitree_sdk2) \| [Python](https://github.com/unitreerobotics/unitree_sdk2_python) | 宇树科技新一代机器人SDK，基于CycloneDDS，支持Go2/B2/H1/G1等机器人的开发与控制。 |
-| 宇树科技ROS2                   | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_ros2)      | 宇树科技Go2/B2机器人的ROS2开发包，接口与unitree_sdk2一致。  |
-| 宇树科技MuJoCo仿真             | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_mujoco)    | 基于MuJoCo的宇树机器人仿真环境，集成unitree_sdk2，包含MJCF模型和地形生成工具。 |
-| 宇树科技Isaac Lab仿真          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_sim_isaaclab) | 基于Isaac Lab的宇树机器人仿真环境，支持数据采集、回放和模型验证。 |
-| 宇树科技XR遥操作               | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/xr_teleoperate)    | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
-| 宇树科技机器人控制教程         | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_guide)     | 宇树科技四足机器人控制的开源教程项目，适合入门学习与参考。   |
-| 宇树科技4D LiDAR SLAM          | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
-| 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
-| 浙江大学FAST实验室无人机项目    | 浙江大学FAST实验室     | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250)       | 250mm自主无人机的硬件和软件设计。                           |
-| 香港科技大学空中机器人项目      | 香港科技大学           | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA)      | 空中机器人在线运动规划的快速增量欧几里得距离场。           |
-| Genesis                        | 胡渊鸣等 (CMU)           | [GitHub](https://github.com/Genesis-Embodied-AI/Genesis)        | 面向机器人与具身AI的通用物理仿真引擎，纯Python实现，速度可达传统引擎数万倍，支持多种材料仿真。 |
-| RoboticsDiffusionTransformer (RDT-1B) | 清华大学          | [GitHub](https://github.com/thu-ml/RoboticsDiffusionTransformer) | 双臂机器人操控基础模型，采用扩散Transformer架构，在多种双臂操控任务上取得SOTA效果。 |
-| Open-TeleVision                | 多校联合                  | [GitHub](https://github.com/OpenTeleVision/TeleVision)           | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
-| AnyGrasp                       | 上海AI实验室              | [GitHub](https://github.com/graspnet/anygrasp_sdk)               | 高效通用的6自由度抓取位姿估计算法，支持任意物体的机器人抓取检测。 |
-| Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
-| OpenLoong青龙人形机器人         | 上海人形机器人创新中心/开放原子基金会 | [GitHub](https://github.com/loongOpen) | 全栈开源人形机器人项目，包含动力学控制(MPC+WBC)、硬件设计、训练平台(Gymloong/MiniGym)和大规模技能调度框架(Brain)。 |
-| Fourier N1                     | 傅利叶智能 (FFTAI)        | [GitHub](https://github.com/FFTAI)                              | 全球首个全开源人形机器人，公开全套硬件设计、BOM、装配指南和Fourier-GRX SDK，1.3米/38公斤/3.5m/s速度。 |
-| EngineAI Humanoid              | EngineAI (松延动力)       | [GitHub](https://github.com/engineai-robotics/engineai_humanoid) | EngineAI双足机器人(SA01/PM01)的开源运动控制算法，采用端到端神经网络实现拟人步态。 |
-| Booster Gym                    | Booster Robotics (加速进化) | [GitHub](https://github.com/BoosterRobotics)                  | Booster T1/K1人形机器人的端到端强化学习运动控制框架，含RoboCup自主踢球Demo。 |
-| RoboBrain 2.5                  | 智源研究院 (FlagOpen)/北京大学 | [GitHub](https://github.com/FlagOpen/RoboBrain2.5)           | 新一代具身AI基础模型，支持精确3D空间推理、深度感知坐标预测和时序建模，CVPR 2025延续工作。 |
-| WholebodyVLA                   | 上海AI实验室 (OpenDriveLab) | [GitHub](https://github.com/OpenDriveLab/WholebodyVLA)        | ICLR 2026，面向人形机器人全身移动操作控制的统一潜空间VLA模型。 |
-| X-VLA                          | 2toinf 等                | [GitHub](https://github.com/2toinf/X-VLA)                       | ICLR 2026，软提示Transformer跨形态VLA模型，AgiBot World挑战赛(IROS 2025)冠军。 |
-| AgileX Cobot Magic             | 松灵机器人 (AgileX)       | [GitHub](https://github.com/agilexrobotics)                     | 基于Mobile ALOHA架构的开源双臂移动操作平台，含PiPER机械臂、AGV底盘和深度相机。 |
-| RoboTwin双臂操作基准           | 港大/上海AI Lab/松灵 (陈天行等) | [GitHub](https://github.com/RoboTwin-Platform/RoboTwin)     | 面向双臂协作操作的可扩展数据生成器与基准平台，内置强域随机化与50+任务，支持多种主流策略基线评测。CVPR 2025 Highlight。 |
-| WALL-OSS具身基础模型           | 自变量机器人 (X Square Robot)  | [GitHub](https://github.com/X-Square-Robot/wall-x)          | 自变量机器人开源的WALL系列具身基础模型训练与推理框架，含WALL-OSS等VLA模型，预训练即可直接上真机执行操作。 |
-| Galaxea G0 / GalaxeaVLA        | 星海图 (Galaxea AI)            | [GitHub](https://github.com/OpenGalaxea/GalaxeaVLA)         | 星海图开源的双系统VLA模型G0/G0.5系列与500+小时真实场景开放世界数据集，支持长程移动操作的预训练、微调与真机部署。 |
-| OpenWBT人形全身遥操作          | 银河通用 & 清华大学            | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT)  | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
-| GraspVLA抓取基础模型           | 银河通用 & 北京大学 (PKU-EPIC) | [GitHub](https://github.com/PKU-EPIC/GraspVLA)              | 基于十亿帧合成数据SynGrasp-1B预训练的抓取基础模型，纯仿真训练即可零样本迁移到真实世界开放词汇抓取。CoRL 2025。 |
-| InternVLA-M1                   | 上海人工智能实验室 (InternRobotics) | [GitHub](https://github.com/InternRobotics/InternVLA-M1) | 空间引导的视觉-语言-动作框架，基于Qwen2.5-VL统一空间定位与动作头训练，面向通用机器人操作策略，MIT协议开源。 |
-| DexGraspVLA灵巧抓取            | 灵初智能 (PsiBot) & 北京大学   | [GitHub](https://github.com/Psi-Robot/DexGraspVLA)         | 层级式灵巧抓取VLA框架，以VLM作高层规划器、扩散策略作低层控制器，杂乱场景灵巧手抓取成功率超90%。AAAI 2026 Oral。 |
 | XLeRobot低成本双臂家用机器人   | 王高天 (Rice University)       | [GitHub](https://github.com/Vector-Wangel/XLeRobot)        | 约660美元的开源双臂移动家用机器人，兼容LeRobot生态，含3D打印硬件、仿真环境与VR/键盘/手柄遥操作，数小时可组装。 |
-| 萝博头 Roboto Origin           | 萝卜派对 (RoboParty)           | [GitHub](https://github.com/Roboparty/roboto_origin)       | 全栈开源的双足人形机器人，开放全部结构图纸、电子、训练与ROS2部署代码，零件可全部通过淘宝采购复刻。 |
-| DiffusionDrive端到端自动驾驶   | 华中科技大学 & 地平线 (hustvl) | [GitHub](https://github.com/hustvl/DiffusionDrive)         | 面向实时端到端自动驾驶的截断扩散策略模型，NAVSIM基准达88.1 PDMS且以45 FPS实时运行，CVPR 2025 Highlight。 |
-| MiMo-Embodied跨具身大模型      | 小米 (Xiaomi MiMo)             | [GitHub](https://github.com/XiaomiMiMo/MiMo-Embodied)      | 小米开源的首个跨具身基础模型，统一自动驾驶与具身智能两大领域，在29项具身与驾驶基准上取得领先性能。 |
-| RynnVLA-001                    | 阿里巴巴达摩院                 | [GitHub](https://github.com/alibaba-damo-academy/RynnVLA-001) | 基于视频生成模型预训练的VLA模型，利用人类第一视角视频演示提升机械臂操作能力，已开源训练代码与预训练权重。ICRA 2026。 |
-| EmbodiedGen生成式3D世界引擎    | 地平线机器人 (Horizon Robotics) | [GitHub](https://github.com/HorizonRobotics/EmbodiedGen) | 面向具身智能的生成式3D世界引擎，将文本、图像编译为物理合理、可直接仿真的3D资产与场景，支持Isaac/MuJoCo/SAPIEN/Genesis等。 |
+| 基于树莓派的目标识别与追踪    | 云飞机器人实验室        | [GitHub](https://github.com/automaticdai/rpi-object-detection) | 基于树莓派 + Web Camera的视觉追踪项目。                      |
+| RoboWiki (云飞机器人中文百科) | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/robowiki)             | 机器人领域的维基百科（公共知识编辑）。                       |
+| Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
+| awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
 
 ## 2. 嵌入式系统项目 | Embedded System
 
@@ -162,4 +201,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年5月23日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年7月4日
