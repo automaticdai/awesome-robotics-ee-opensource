@@ -45,6 +45,7 @@
 | unitree_rl_gym                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym)   | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。      |
 | unitree_rl_lab                | 宇树科技 (Unitree)     | [IsaacLab](https://github.com/unitreerobotics/unitree_rl_lab) \| [MuJoCo](https://github.com/unitreerobotics/unitree_rl_mjlab) | 宇树科技机器人强化学习实现，分别基于Isaac Lab和MuJoCo。      |
 | Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
+| Dreamwaq轮足机器人强化学习库   | yusongmin1 (哈尔滨工程大学) | [GitHub](https://github.com/yusongmin1/Dreamwaq)                | 面向轮足机器人的强化学习框架，复现DreamWaQ系列的CVAE隐式地形估计算法并支持视觉-本体感知融合，基于Isaac Gym训练、MuJoCo Sim2Sim验证，已在山猫M20轮足机器人实机部署，另含Go2倒立/后腿站立任务。（原始方法见KAIST的[DreamWaQ](https://arxiv.org/abs/2301.10602)，ICRA 2023；其改进版[DreamWaQ++](https://dreamwaqpp.github.io/)发表于T-RO 2026，暂未开源。） |
 
 ### 1.3 机械臂、抓取与操作
 
