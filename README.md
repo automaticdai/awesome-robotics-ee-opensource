@@ -41,6 +41,7 @@
 | Booster Gym                    | Booster Robotics (加速进化) | [GitHub](https://github.com/BoosterRobotics)                  | Booster T1/K1人形机器人的端到端强化学习运动控制框架，含RoboCup自主踢球Demo。 |
 | Unitree Qmini开源双足机器人    | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/Qmini)             | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
 | 萝博头 Roboto Origin           | 萝卜派对 (RoboParty)           | [GitHub](https://github.com/Roboparty/roboto_origin)       | 全栈开源的双足人形机器人，开放全部结构图纸、电子、训练与ROS2部署代码，零件可全部通过淘宝采购复刻。 |
+| Microduck迷你双足机器人        | Pollen Robotics         | [GitHub](https://github.com/pollen-robotics/microduck)       | 基于强化学习策略运动的迷你鸭形双足机器人，开源Rust控制软件，支持行走、鸭嘴抓取、自主起身与MuJoCo仿真。 |
 | OpenCat                       | Petoi                   | [GitHub](https://github.com/PetoiCamp/OpenCat)               | 开源四足机器人平台                                           |
 | 小米CyberDog开源四足机器人     | 小米科技               | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2)       | 小米CyberDog四足机器人的开源软件和硬件资料。               |
 | unitree_rl_gym                | 宇树科技 (Unitree)     | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym)   | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。      |
@@ -203,4 +204,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年7月4日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年9月15日
