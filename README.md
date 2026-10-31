@@ -48,6 +48,10 @@
 | unitree_rl_lab                | 宇树科技 (Unitree)     | [IsaacLab](https://github.com/unitreerobotics/unitree_rl_lab) \| [MuJoCo](https://github.com/unitreerobotics/unitree_rl_mjlab) | 宇树科技机器人强化学习实现，分别基于Isaac Lab和MuJoCo。      |
 | Humanoid-Gym                   | 多校联合 (RoboterAX等)    | [GitHub](https://github.com/roboterax/humanoid-gym)              | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
 | Dreamwaq轮足机器人强化学习库   | yusongmin1 (哈尔滨工程大学) | [GitHub](https://github.com/yusongmin1/Dreamwaq)                | 面向轮足机器人的强化学习框架，复现DreamWaQ系列的CVAE隐式地形估计算法并支持视觉-本体感知融合，基于Isaac Gym训练、MuJoCo Sim2Sim验证，已在山猫M20轮足机器人实机部署，另含Go2倒立/后腿站立任务。（原始方法见KAIST的[DreamWaQ](https://arxiv.org/abs/2301.10602)，ICRA 2023；其改进版[DreamWaQ++](https://dreamwaqpp.github.io/)发表于T-RO 2026，暂未开源。） |
+| DeepMimic                      | Xue Bin Peng (UC Berkeley) | [GitHub](https://github.com/xbpeng/DeepMimic)                 | 基于深度强化学习的物理角色动作模仿框架（SIGGRAPH 2018），通过参考动作跟踪奖励学习高动态技能，是后续人形机器人动作跟踪方法的奠基工作。 |
+| BeyondMimic                    | UC Berkeley Hybrid Robotics | [训练](https://github.com/HybridRobotics/whole_body_tracking) \| [部署](https://github.com/HybridRobotics/motion_tracking_controller) | 人形机器人全身动作跟踪框架，基于Isaac Lab训练LAFAN1等高动态动作并零调参Sim2Real部署至Unitree G1，结合引导扩散模型实现测试时可控的多任务控制。 |
+| SONIC (GEAR-SONIC)             | NVIDIA GEAR Lab         | [GitHub](https://github.com/NVlabs/GR00T-WholeBodyControl)     | 将动作跟踪规模化至1亿帧数据的人形机器人全身控制基础模型，支持遥操作、视频及VLA等多种指令接口，代码以Apache 2.0开源、模型权重发布于[Hugging Face](https://huggingface.co/nvidia/GEAR-SONIC)。 |
+| SuperMimic                     | UC Berkeley (Liao等)    | [论文](https://arxiv.org/abs/2610.28480) \| [复现](https://github.com/CuboiLeo/SuperMimic-Reproduced) | 学习可微世界模型并以BPTT优化策略的人形动作跟踪方法（CoRL 2026），单GPU训练3小时即超越128 GPU训练7天的基线。官方代码暂未开源，链接为社区基于mjlab的Unitree G1复现。 |
 
 ### 1.3 机械臂、抓取与操作
 
