@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>机器人/嵌入式/AI 开源项目列表</title>
+<meta name="description" content="收录优秀的机器人、嵌入式系统、人工智能相关的中文开源及华人发起的项目。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f6f8fa;
+    --bg-hover: #eef1f4;
+    --fg: #1f2328;
+    --fg-muted: #59636e;
+    --border: #d1d9e0;
+    --accent: #0969da;
+    --accent-soft: #ddf4ff;
+    --mark: #fff8c5;
+    --header-h: 56px;
+    --sidebar-w: 280px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d1117; --bg-soft: #151b23; --bg-hover: #1f2630; --fg: #e6edf3;
+      --fg-muted: #9198a1; --border: #30363d; --accent: #4493f8;
+      --accent-soft: #12263f; --mark: #5c4a00; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1117; --bg-soft: #151b23; --bg-hover: #1f2630; --fg: #e6edf3;
+    --fg-muted: #9198a1; --border: #30363d; --accent: #4493f8;
+    --accent-soft: #12263f; --mark: #5c4a00; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 20; height: var(--header-h);
+    display: flex; align-items: center; gap: 12px; padding: 0 16px;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+  }
+  .brand { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--fg); }
+  .brand:hover { text-decoration: none; }
+  .spacer { flex: 1; }
+  .search { position: relative; width: min(360px, 40vw); }
+  .search input {
+    width: 100%; height: 34px; padding: 0 64px 0 12px; font: inherit; font-size: 14px;
+    color: var(--fg); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 6px;
+  }
+  .search input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .search .hint {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    font-size: 12px; color: var(--fg-muted); pointer-events: none;
+  }
+  .icon-btn {
+    display: inline-grid; place-items: center; width: 34px; height: 34px; flex: none;
+    border: 1px solid var(--border); border-radius: 6px; background: var(--bg-soft);
+    color: var(--fg); cursor: pointer;
+  }
+  .icon-btn:hover { background: var(--bg-hover); text-decoration: none; }
+  .icon-btn svg { width: 18px; height: 18px; fill: currentColor; }
+  #menu-btn { display: none; }
+
+  /* Layout */
+  .layout { display: flex; }
+  nav#sidebar {
+    position: sticky; top: var(--header-h); align-self: flex-start;
+    width: var(--sidebar-w); flex: none; height: calc(100vh - var(--header-h));
+    overflow-y: auto; padding: 16px 8px 32px; border-right: 1px solid var(--border);
+    background: var(--bg);
+  }
+  nav#sidebar ul { list-style: none; margin: 0; padding: 0; }
+  nav#sidebar a {
+    display: flex; justify-content: space-between; gap: 8px; padding: 5px 10px;
+    border-radius: 6px; color: var(--fg); font-size: 14px; line-height: 1.4;
+  }
+  nav#sidebar a:hover { background: var(--bg-hover); text-decoration: none; }
+  nav#sidebar a.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  nav#sidebar .lvl2 > a { font-weight: 600; margin-top: 6px; }
+  nav#sidebar .lvl3 > a { padding-left: 24px; color: var(--fg-muted); font-size: 13.5px; }
+  nav#sidebar .lvl3 > a.active { color: var(--accent); }
+  nav#sidebar .count {
+    flex: none; font-size: 12px; font-weight: 400; color: var(--fg-muted);
+    background: var(--bg-soft); border-radius: 10px; padding: 0 7px; align-self: center;
+  }
+  nav#sidebar li.hidden { display: none; }
+
+  main { flex: 1; min-width: 0; padding: 24px 32px 64px; }
+  .content { max-width: 1400px; margin: 0 auto; }
+
+  /* Hero */
+  .hero h1 { font-size: 28px; margin: 0 0 8px; line-height: 1.3; }
+  .stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 8px; }
+  .stat {
+    padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-soft);
+  }
+  .stat b { display: block; font-size: 22px; line-height: 1.2; }
+  .stat span { font-size: 13px; color: var(--fg-muted); }
+
+  /* Rendered markdown */
+  #doc h2 { font-size: 22px; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  #doc h3 { font-size: 18px; margin: 28px 0 10px; }
+  #doc h2, #doc h3 { scroll-margin-top: calc(var(--header-h) + 12px); }
+  #doc img { max-width: 100%; vertical-align: middle; }
+  #doc ul { padding-left: 22px; }
+  #doc hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; margin: 12px 0 20px; }
+  #doc table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  #doc th, #doc td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  #doc tr:last-child td { border-bottom: 0; }
+  #doc th { background: var(--bg-soft); position: sticky; top: 0; font-weight: 600; white-space: nowrap; }
+  #doc tbody tr:hover { background: var(--bg-hover); }
+  #doc td:nth-child(1) { font-weight: 600; min-width: 140px; }
+  #doc td:nth-child(2) { min-width: 120px; color: var(--fg-muted); }
+  #doc td:nth-child(3) { white-space: nowrap; }
+  #doc td:nth-child(4) { min-width: 280px; }
+  #doc tr.hidden, #doc .hidden { display: none; }
+  mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
+
+  .status { color: var(--fg-muted); padding: 40px 0; text-align: center; }
+  #no-results { display: none; }
+
+  #to-top {
+    position: fixed; right: 20px; bottom: 20px; z-index: 15; opacity: 0; pointer-events: none;
+    transition: opacity .2s;
+  }
+  #to-top.show { opacity: 1; pointer-events: auto; }
+  #backdrop { display: none; }
+
+  @media (max-width: 900px) {
+    #menu-btn { display: inline-grid; }
+    .brand { font-size: 14px; }
+    .search { width: auto; flex: 1; min-width: 0; }
+    .search .hint { display: none; }
+    .search input { padding-right: 12px; }
+    .spacer { display: none; }
+    nav#sidebar {
+      position: fixed; left: 0; top: var(--header-h); z-index: 30; height: calc(100vh - var(--header-h));
+      transform: translateX(-100%); transition: transform .2s; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    }
+    body.nav-open nav#sidebar { transform: none; }
+    body.nav-open #backdrop {
+      display: block; position: fixed; inset: var(--header-h) 0 0 0; z-index: 25; background: rgba(0,0,0,.35);
+    }
+    main { padding: 16px 16px 48px; }
+    .hero h1 { font-size: 22px; }
+  }
+  @media (max-width: 520px) { .brand { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <button class="icon-btn" id="menu-btn" aria-label="目录">
+    <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+  </button>
+  <a class="brand" href="#top">🤖 Awesome Robotics &amp; EE Open Source</a>
+  <div class="spacer"></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="搜索项目、作者、描述…" autocomplete="off" aria-label="搜索">
+    <span class="hint" id="hint">按 / 搜索</span>
+  </div>
+  <button class="icon-btn" id="theme-btn" aria-label="切换主题" title="切换主题">
+    <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8A9 9 0 0 0 12 3z"/></svg>
+  </button>
+  <a class="icon-btn" href="https://github.com/automaticdai/awesome-robotics-ee-opensource" aria-label="GitHub" title="GitHub">
+    <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+  </a>
+</header>
+
+<div class="layout" id="top">
+  <nav id="sidebar" aria-label="目录"><ul id="toc"></ul></nav>
+  <div id="backdrop"></div>
+  <main>
+    <div class="content">
+      <section class="hero" id="hero" hidden>
+        <h1 id="title"></h1>
+        <div class="stats" id="stats"></div>
+      </section>
+      <div id="doc"><p class="status">正在加载…</p></div>
+      <p class="status" id="no-results">没有找到匹配的项目。</p>
+    </div>
+  </main>
+</div>
+
+<button class="icon-btn" id="to-top" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"/></svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script>
+(function () {
+  // README is loaded at runtime so the page always mirrors the list.
+  // "../README.md" works when serving the repo root locally; GitHub Pages
+  // (serving only docs/) falls through to the raw file on GitHub.
+  const SOURCES = [
+    '../README.md',
+    'https://raw.githubusercontent.com/automaticdai/awesome-robotics-ee-opensource/main/README.md'
+  ];
+  const SELF_URL = 'automaticdai.github.io/awesome-robotics-ee-opensource';
+
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+  const doc = $('#doc');
+
+  // ---- Theme ----
+  const root = document.documentElement;
+  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+  $('#theme-btn').addEventListener('click', () => {
+    const dark = root.dataset.theme
+      ? root.dataset.theme === 'dark'
+      : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  // ---- Mobile nav ----
+  const closeNav = () => document.body.classList.remove('nav-open');
+  $('#menu-btn').addEventListener('click', () => document.body.classList.toggle('nav-open'));
+  $('#backdrop').addEventListener('click', closeNav);
+
+  // ---- Back to top ----
+  const toTop = $('#to-top');
+  addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
+  toTop.addEventListener('click', () => scrollTo({ top: 0 }));
+
+  // GitHub-compatible heading slugs, so README's in-page links keep working.
+  function slugify(text, seen) {
+    let s = text.trim().toLowerCase()
+      .replace(/[^\p{L}\p{N}\s_-]/gu, '')
+      .replace(/\s/g, '-');
+    if (seen[s] != null) { seen[s] += 1; s = s + '-' + seen[s]; } else { seen[s] = 0; }
+    return s;
+  }
+
+  async function load() {
+    for (const url of SOURCES) {
+      try {
+        const r = await fetch(url, { cache: 'no-cache' });
+        if (r.ok) return await r.text();
+      } catch (e) { /* try next */ }
+    }
+    throw new Error('无法加载 README.md');
+  }
+
+  function render(md) {
+    doc.innerHTML = DOMPurify.sanitize(marked.parse(md, { gfm: true }));
+
+    // Title -> hero
+    const h1 = $('h1', doc);
+    if (h1) { $('#title').textContent = h1.textContent; document.title = h1.textContent; h1.remove(); }
+
+    // Drop the self-referential "web version" bullet
+    $$('li', doc).forEach(li => {
+      if (li.querySelector(`a[href*="${SELF_URL}"]`)) li.remove();
+    });
+
+    // External links open in new tab
+    $$('a[href^="http"]', doc).forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+
+    // Wrap tables for horizontal scroll
+    $$('table', doc).forEach(t => {
+      const w = document.createElement('div'); w.className = 'table-wrap';
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    });
+
+    // Group content into sections by heading so search can hide them
+    const seen = {};
+    const headings = $$('h2, h3', doc);
+    headings.forEach(h => { h.id = slugify(h.textContent, seen); });
+    headings.forEach(h => {
+      const rows = [];
+      let el = h.nextElementSibling;
+      while (el && !/^H[23]$/.test(el.tagName)) {
+        rows.push(...$$('tbody tr', el));
+        el = el.nextElementSibling;
+      }
+      h._rows = rows;
+    });
+
+    // Build TOC with project counts
+    const toc = $('#toc');
+    let total = 0, cur2 = null;
+    headings.forEach(h => {
+      const lvl = h.tagName === 'H2' ? 2 : 3;
+      let count = h._rows.length;
+      if (lvl === 2) {
+        // h2 count includes its h3 children
+        let i = headings.indexOf(h) + 1;
+        while (i < headings.length && headings[i].tagName === 'H3') count += headings[i++]._rows.length;
+        cur2 = h;
+      }
+      h._count = count;
+      if (lvl === 2) total += count;
+      if (!count && !/star history/i.test(h.textContent) && lvl === 3) return;
+      const li = document.createElement('li');
+      li.className = 'lvl' + lvl;
+      li.innerHTML = `<a href="#${encodeURIComponent(h.id)}"><span></span>${count ? '<span class="count"></span>' : ''}</a>`;
+      li.firstChild.firstChild.textContent = h.textContent;
+      if (count) li.querySelector('.count').textContent = count;
+      h._li = li;
+      toc.appendChild(li);
+    });
+    toc.addEventListener('click', e => { if (e.target.closest('a')) closeNav(); });
+
+    // Stats
+    const h2s = headings.filter(h => h.tagName === 'H2' && h._count);
+    const subs = headings.filter(h => h.tagName === 'H3' && h._count);
+    $('#stats').innerHTML = [
+      [total, '收录项目'], [h2s.length, '大类'], [subs.length, '子分类']
+    ].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+    $('#hero').hidden = false;
+
+    setupSearch(headings);
+    setupScrollSpy(headings.filter(h => h._li));
+
+    if (location.hash) {
+      const t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (t) t.scrollIntoView();
+    }
+  }
+
+  function setupSearch(headings) {
+    const q = $('#q');
+    const rows = $$('tbody tr', doc);
+    rows.forEach(r => { r._text = r.textContent.toLowerCase(); });
+    const cells = $$('tbody td', doc);
+    cells.forEach(c => { c._html = c.innerHTML; });
+    const others = $$('#doc > :not(h2):not(h3):not(.table-wrap)');
+    const hero = $('#hero');
+
+    function highlight(node, term) {
+      const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+      const hits = [];
+      while (walker.nextNode()) {
+        const n = walker.currentNode;
+        if (n.nodeValue.toLowerCase().includes(term)) hits.push(n);
+      }
+      hits.forEach(n => {
+        const frag = document.createDocumentFragment();
+        const src = n.nodeValue, low = src.toLowerCase();
+        let i = 0, j;
+        while ((j = low.indexOf(term, i)) !== -1) {
+          frag.append(src.slice(i, j));
+          const m = document.createElement('mark'); m.textContent = src.slice(j, j + term.length);
+          frag.append(m); i = j + term.length;
+        }
+        frag.append(src.slice(i));
+        n.parentNode.replaceChild(frag, n);
+      });
+    }
+
+    let timer;
+    function run() {
+      const term = q.value.trim().toLowerCase();
+      cells.forEach(c => { if (c.querySelector('mark')) c.innerHTML = c._html; });
+      let shown = 0;
+      rows.forEach(r => {
+        const hit = !term || r._text.includes(term);
+        r.classList.toggle('hidden', !hit);
+        if (hit) { shown++; if (term) highlight(r, term); }
+      });
+      // Hide tables/headings/sections with no visible rows
+      $$('.table-wrap', doc).forEach(w => {
+        w.classList.toggle('hidden', !!term && !$('tbody tr:not(.hidden)', w));
+      });
+      headings.forEach(h => {
+        const own = h._rows.some(r => !r.classList.contains('hidden'));
+        let vis = own;
+        if (h.tagName === 'H2') {
+          let i = headings.indexOf(h) + 1;
+          while (i < headings.length && headings[i].tagName === 'H3') {
+            if (headings[i]._rows.some(r => !r.classList.contains('hidden'))) vis = true;
+            i++;
+          }
+        }
+        const hide = !!term && !vis;
+        h.classList.toggle('hidden', hide);
+        if (h._li) {
+          h._li.classList.toggle('hidden', hide);
+          const c = h._li.querySelector('.count');
+          if (c) {
+            let n = h._rows.filter(r => !r.classList.contains('hidden')).length;
+            if (h.tagName === 'H2') {
+              let i = headings.indexOf(h) + 1;
+              while (i < headings.length && headings[i].tagName === 'H3')
+                n += headings[i++]._rows.filter(r => !r.classList.contains('hidden')).length;
+            }
+            c.textContent = term ? n : h._count;
+          }
+        }
+      });
+      others.forEach(el => el.classList.toggle('hidden', !!term));
+      hero.classList.toggle('hidden', !!term);
+      $('#no-results').style.display = term && !shown ? 'block' : 'none';
+      $('#hint').textContent = term ? `${shown} 个结果` : '按 / 搜索';
+    }
+    q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(run, 120); });
+    addEventListener('keydown', e => {
+      if (e.key === '/' && document.activeElement !== q) { e.preventDefault(); q.focus(); }
+      else if (e.key === 'Escape' && document.activeElement === q) { q.value = ''; run(); q.blur(); }
+    });
+  }
+
+  function setupScrollSpy(heads) {
+    let active = null;
+    function update() {
+      const y = $('header').offsetHeight + 24;
+      let cur = null;
+      for (const h of heads) {
+        if (h.classList.contains('hidden')) continue;
+        if (h.getBoundingClientRect().top <= y) cur = h; else break;
+      }
+      if (cur === active) return;
+      if (active) active._li.firstChild.classList.remove('active');
+      active = cur;
+      if (active) {
+        const a = active._li.firstChild;
+        a.classList.add('active');
+        const nav = $('#sidebar'), r = a.getBoundingClientRect(), nr = nav.getBoundingClientRect();
+        if (r.top < nr.top || r.bottom > nr.bottom) nav.scrollTop += r.top - nr.top - nr.height / 3;
+      }
+    }
+    addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  load().then(render).catch(err => {
+    doc.innerHTML = '';
+    const p = document.createElement('p'); p.className = 'status';
+    p.textContent = err.message + '，请访问 ';
+    const a = document.createElement('a');
+    a.href = 'https://github.com/automaticdai/awesome-robotics-ee-opensource';
+    a.textContent = 'GitHub 仓库';
+    p.append(a, '。');
+    doc.append(p);
+  });
+})();
+</script>
+</body>
+</html>

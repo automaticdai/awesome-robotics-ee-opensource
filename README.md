@@ -1,9 +1,11 @@
 # 机器人/嵌入式系统/人工智能开源项目列表
 
+![](https://img.shields.io/github/stars/automaticdai/awesome-robotics-ee-opensource) ![](https://img.shields.io/github/forks/automaticdai/awesome-robotics-ee-opensource) ![](https://img.shields.io/github/license/automaticdai/awesome-robotics-ee-opensource)
+
+- ⭐ 宽屏网页版见：[https://automaticdai.github.io/awesome-robotics-ee-opensource/](https://automaticdai.github.io/awesome-robotics-ee-opensource/)。
 - 本页面收录优秀的机器人、嵌入式系统、人工智能相关的开源项目。
 - 目前仅收录中文开源及华人发起的项目。
 - 本列表由 云飞机器人实验室 ( [B站](https://space.bilibili.com/493264461) \| [知乎](https://www.zhihu.com/column/yfworld) \| [博客](https://yfrobotics.github.io/) \| [YouTube](https://www.youtube.com/@yfrobotics) \| [Instagram](https://www.instagram.com/yfrobotics/) ) 长期维护与更新。
-- 该列表的宽屏网页版见：[https://automaticdai.github.io/awesome-robotics-ee-opensource/](https://automaticdai.github.io/awesome-robotics-ee-opensource/)。
 - 欢迎贡献：如果你希望推荐别的项目加入该列表，可以在项目的 [GitHub](https://github.com/yfrobotics/awesome-robotics-ee-opensource) 上 [commit issue](https://github.com/yfrobotics/awesome-robotics-ee-opensource/issues) 或者 clone & pull request。
 
 
@@ -52,6 +54,7 @@
 | BeyondMimic                    | UC Berkeley Hybrid Robotics | [训练](https://github.com/HybridRobotics/whole_body_tracking) \| [部署](https://github.com/HybridRobotics/motion_tracking_controller) | 人形机器人全身动作跟踪框架，基于Isaac Lab训练LAFAN1等高动态动作并零调参Sim2Real部署至Unitree G1，结合引导扩散模型实现测试时可控的多任务控制。 |
 | SONIC (GEAR-SONIC)             | NVIDIA GEAR Lab         | [GitHub](https://github.com/NVlabs/GR00T-WholeBodyControl)     | 将动作跟踪规模化至1亿帧数据的人形机器人全身控制基础模型，支持遥操作、视频及VLA等多种指令接口，代码以Apache 2.0开源、模型权重发布于[Hugging Face](https://huggingface.co/nvidia/GEAR-SONIC)。 |
 | SuperMimic                     | UC Berkeley (Liao等)    | [论文](https://arxiv.org/abs/2610.28480) \| [复现](https://github.com/CuboiLeo/SuperMimic-Reproduced) | 学习可微世界模型并以BPTT优化策略的人形动作跟踪方法（CoRL 2026），单GPU训练3小时即超越128 GPU训练7天的基线。官方代码暂未开源，链接为社区基于mjlab的Unitree G1复现。 |
+| 宇树G1人形机器人手册           | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/unitree-g1-handbook) \| [在线阅读](https://yfrobotics.github.io/unitree-g1-handbook/) | 面向初学者的宇树G1 (EDU版) 中文使用手册，涵盖开箱与安全、网络连接、SDK/灵巧手/ROS2/仿真开发、具身学习(数据集、VLA、SONIC)、硬件与故障排查，附可运行示例。 |
 
 ### 1.3 机械臂、抓取与操作
 
@@ -82,6 +85,7 @@
 | UniAD                         | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/UniAD)             | CVPR 2023最佳论文，面向规划的统一自动驾驶框架，整合感知、预测和规划。 |
 | BEVFormer                     | 上海AI实验室/南京大学   | [GitHub](https://github.com/fundamentalvision/BEVFormer)      | ECCV 2022，基于纯相机的BEV感知框架，用于3D目标检测和语义地图分割。 |
 | DiffusionDrive端到端自动驾驶   | 华中科技大学 & 地平线 (hustvl) | [GitHub](https://github.com/hustvl/DiffusionDrive)         | 面向实时端到端自动驾驶的截断扩散策略模型，NAVSIM基准达88.1 PDMS且以45 FPS实时运行，CVPR 2025 Highlight。 |
+| 自动驾驶技术指南               | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/self-driving-handbook-cn) \| [在线阅读](https://yfrobotics.github.io/self-driving-handbook-cn) | 系统介绍自动驾驶起源、技术与行业应用的中文手册，覆盖SAE分级、车辆架构、V2X、高精地图、计算平台、传感器到核心算法与工程落地。 |
 
 ### 1.6 SLAM、感知与状态估计
 
@@ -126,6 +130,7 @@
 | 解魔方机器人                  | 动力老男孩              | [项目主页](http://www.diy-robots.com/?page_id=46)            | 基于乐高的解魔方机器人。                                     |
 | XLeRobot低成本双臂家用机器人   | 王高天 (Rice University)       | [GitHub](https://github.com/Vector-Wangel/XLeRobot)        | 约660美元的开源双臂移动家用机器人，兼容LeRobot生态，含3D打印硬件、仿真环境与VR/键盘/手柄遥操作，数小时可组装。 |
 | 基于树莓派的目标识别与追踪    | 云飞机器人实验室        | [GitHub](https://github.com/automaticdai/rpi-object-detection) | 基于树莓派 + Web Camera的视觉追踪项目。                      |
+| 基于Jetson的实时目标检测与追踪 | 云飞机器人实验室        | [GitHub](https://github.com/automaticdai/nvidia-jetson-object-detection) | 基于NVIDIA Jetson (Orin/Nano/Thor) 与PyTorch的实时目标检测与追踪项目，是树莓派目标识别项目的GPU加速版本。 |
 | RoboWiki (云飞机器人中文百科) | 云飞机器人实验室        | [GitHub](https://github.com/yfrobotics/robowiki)             | 机器人领域的维基百科（公共知识编辑）。                       |
 | Awesome-Robotics-Foundation-Models | robotics-survey    | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
 | awesome-3dcv-papers-daily     | 3D视觉工坊              | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
@@ -325,3 +330,7 @@
 ---
 
 本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年11月12日
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=automaticdai/awesome-robotics-ee-opensource&type=date&legend=top-left)](https://www.star-history.com/#automaticdai/awesome-robotics-ee-opensource&type=date&legend=top-left)
