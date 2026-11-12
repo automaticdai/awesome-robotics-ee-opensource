@@ -132,8 +132,12 @@
 
 ## 2. 嵌入式系统项目 | Embedded System
 
-| 项目名称                            | 发起人/作者                 | 项目地址                                                     | 项目介绍                                                     |
-| ----------------------------------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+**子分类**：[2.1 创客作品与开源硬件](#21-创客作品与开源硬件) · [2.2 软件组件、GUI与中间件](#22-软件组件gui与中间件) · [2.3 调试工具与仪器](#23-调试工具与仪器) · [2.4 芯片原厂SDK与开发板](#24-芯片原厂sdk与开发板) · [2.5 物联网平台与连接](#25-物联网平台与连接) · [2.6 学习资源](#26-学习资源)
+
+### 2.1 创客作品与开源硬件
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
 | PocketLCD: 带充电宝功能的便携显示器 | 稚晖君 (peng-zhihui)        | [GitHub](https://github.com/peng-zhihui/PocketLCD)           | 介绍视频：[【自制】你的下一个显示器，可能是个充电宝？？](https://www.bilibili.com/video/BV17D4y1X7AT) |
 | L-ink电子墨水屏NFC智能卡片          | 稚晖君 (peng-zhihui)        | [GitHub](https://github.com/peng-zhihui/L-ink_Card)          | 为了解决个人使用IC卡时遇到的一些痛点设计的一个迷你NFC智能卡片，基于STM32L051和ST25DV。 |
 | 低成本激光投射虚拟键盘的设计制作    | 陈世凯 (CSK)                |                                                              | - [低成本激光投射虚拟键盘的设计制作-上(原理和硬件)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part1.html) <br />- [低成本激光投射虚拟键盘的设计制作-下(算法与实现)](http://www.csksoft.net/blog/post/lowcost.laserkbd_part2.html) |
@@ -144,9 +148,109 @@
 | 妖姬 – 增强现实电子植物             | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/arduino-yaoji)      | 妖姬是云飞实验室在极客大赛中的48小时极限创作作品。妖姬是一款概念式的互动电子植物，采用了Arduino + Android的方案，融合了信息与物理的概念式作品。 |
 | YF Smart Home                       | 云飞机器人实验室            | [GitHub](https://github.com/yfrobotics/yf-home-iot)          | 云飞智能家居项目旨在探索新的智能家居系统解决方案。           |
 | 树莓派温湿度气象站                  | 云飞机器人实验室            | [GitHub](https://github.com/automaticdai/rpi-environmental-sensing) | 基于树莓派的开源温湿度气象站。                               |
+| 小智 AI 聊天机器人 (xiaozhi-esp32) | 虾哥 (78) | [GitHub](https://github.com/78/xiaozhi-esp32) | 基于ESP32与MCP协议的AI语音聊天机器人固件，支持离线唤醒、流式语音对话和上百款开发板，是近年最火的中文开源硬件项目之一。 |
+| xiaozhi-esp32-server | xinnan-tech | [GitHub](https://github.com/xinnan-tech/xiaozhi-esp32-server) | 小智ESP32的开源后端服务，可自建服务器接入各类ASR/LLM/TTS，并提供设备管理控制台。 |
+| HoloCubic 透明显示桌面站 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/HoloCubic) | 带网络功能的伪全息透明显示桌面站，基于ESP32-PICO和分光棱镜。 |
+| HoloCubic_AIO | 溜马小哥 (ClimbSnail) | [GitHub](https://github.com/ClimbSnail/HoloCubic_AIO) | HoloCubic的多功能AIO固件，集成天气时钟、相册、视频播放、桌面投屏、B站粉丝显示等应用。 |
+| 瀚文 HelloWord 机械键盘 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/HelloWord-Keyboard) | 模块化的智能机械键盘，带墨水屏和FOC力反馈旋钮的多功能扩展模块。 |
+| Peak 超迷你智能终端 | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/Peak) | 基于ESP32和LVGL的口袋智能终端套件，集成屏幕、IMU、电池与多种传感器。 |
+| Planck-Pi | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/Planck-Pi) | 基于全志F1C200s的超迷你、低成本嵌入式Linux开发板。 |
+| Ctrl-FOC-Lite | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/Ctrl-FOC-Lite) | 基于SimpleFOC的低成本无刷电机FOC驱动板。 |
+| 灯哥开源FOC控制器 | 灯哥 (ToanTech) | [GitHub](https://github.com/ToanTech/Deng-s-foc-controller) | 双路迷你无刷电机FOC驱动板，配套完整中文教程，是国内FOC入门的常用方案。 |
+| X-TRACK 自行车码表 | FASTSHIFT (_VIFEXTech) | [GitHub](https://github.com/FASTSHIFT/X-TRACK) | 支持离线地图和轨迹记录的开源GPS自行车码表，其LVGL页面管理框架被大量项目借鉴。 |
+| WatchX 智能手表 | FASTSHIFT (_VIFEXTech) | [GitHub](https://github.com/FASTSHIFT/WatchX) | 基于LVGL的开源智能手表。 |
+| OV-Watch 智能手表 | No-Chicken | [GitHub](https://github.com/No-Chicken/OV-Watch) | 基于STM32F411、FreeRTOS和LVGL的开源智能手表，含心率、血氧、计步、海拔等功能，软硬件全开源。 |
+| X-Knob 智能旋钮 | SmallPond | [GitHub](https://github.com/SmallPond/X-Knob) | 基于ESP32-S3、LVGL和无刷电机力反馈的智能旋钮，支持Surface Dial模式和MQTT智能家居控制。 |
+| wukong-robot 智能音箱 | 潘伟洲 (wzpan) | [GitHub](https://github.com/wzpan/wukong-robot) | 简单、灵活的中文语音对话机器人/智能音箱项目，可运行于树莓派，支持大模型多轮对话。 |
+| InkTime 墨水屏电子相框 | dai-hongtao | [GitHub](https://github.com/dai-hongtao/InkTime) | 可自托管的墨水屏电子相框，用AI为照片库按“值得回忆度”打分并每日推送。 |
+
+### 2.2 软件组件、GUI与中间件
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
+| EasyLogger | 朱天龙 (armink) | [GitHub](https://github.com/armink/EasyLogger) | 超轻量级(ROM<1.6K, RAM<0.3K)、高性能的C/C++日志库，适合资源受限的MCU。 |
+| FlashDB / EasyFlash | 朱天龙 (armink) | [FlashDB](https://github.com/armink/FlashDB) \| [EasyFlash](https://github.com/armink/EasyFlash) | 面向嵌入式的超轻量级数据库，支持KV键值与时序数据；EasyFlash为其前身，提供参数存储、IAP升级和日志存储。 |
+| CmBacktrace | 朱天龙 (armink) | [GitHub](https://github.com/armink/CmBacktrace) | ARM Cortex-M系列MCU的错误追踪库，可自动诊断HardFault原因并输出函数调用栈。 |
+| SFUD | 朱天龙 (armink) | [GitHub](https://github.com/armink/SFUD) | 基于JEDEC SFDP标准的串行(SPI) Flash通用驱动库。 |
+| MultiButton / MultiTimer | 0x1abin | [MultiButton](https://github.com/0x1abin/MultiButton) \| [MultiTimer](https://github.com/0x1abin/MultiTimer) | 简单易用的事件驱动型按键驱动模块与软件定时器扩展模块。 |
+| letter-shell | Letter (NevermindZZT) | [GitHub](https://github.com/NevermindZZT/letter-shell) | 功能强大的嵌入式shell，支持命令自动补全、快捷键、权限管理和函数直接导出为命令。 |
+| CherryUSB | sakumisu (cherry-embedded) | [GitHub](https://github.com/cherry-embedded/CherryUSB) | 小而美、高性能、可移植的嵌入式USB主从协议栈，支持大量国产芯片的USB IP。 |
+| PikaPython (PikaScript) | 李昂 (pikasTech) | [GitHub](https://github.com/pikasTech/PikaPython) | 仅需4KB RAM即可运行的超轻量级Python解释器，零依赖，可方便地绑定C模块。 |
+| LuatOS | 合宙 (openLuat) | [GitHub](https://github.com/openLuat/LuatOS) | 面向物联网设备的嵌入式Lua引擎与运行框架，内存占用低，外设与网络组件丰富。 |
+| AWTK | 周立功 (ZLG) | [GitHub](https://github.com/zlgopen/awtk) | ZLG开源的跨平台嵌入式GUI引擎(Toolkit AnyWhere)，支持从MCU到桌面的多种平台。 |
+| MiniGUI | 魏永明 / 飞漫软件 | [GitHub](https://github.com/VincentWei/MiniGUI) | 诞生于1998年的老牌国产嵌入式窗口系统与GUI库，广泛用于各类智能设备。 |
+| GuiLite | idea4good | [GitHub](https://github.com/idea4good/GuiLite) | 仅约4千行代码的header-only超轻量GUI库，可运行于单片机及各主流平台。 |
+| oled-ui-astra | AstraThreshold (dcfsswindy) | [GitHub](https://github.com/AstraThreshold/oled-ui-astra) | 丝滑、易部署、易扩展的单色OLED菜单UI框架，基于C++。 |
+| WouoUI | RQNG | [GitHub](https://github.com/RQNG/WouoUI) | 模仿稚晖君MonoUI风格的超丝滑OLED菜单UI，使用EC11旋转编码器控制。 |
+| libhv | ithewei | [GitHub](https://github.com/ithewei/libhv) | 比libevent/libuv/asio更易用的C/C++跨平台网络库，支持TCP/UDP/SSL/HTTP/WebSocket/MQTT，常用于嵌入式Linux。 |
+| mqttclient | 杰杰 (jiejieTop) | [GitHub](https://github.com/IoTSharp/mqttclient) | 高性能、高稳定性的跨平台MQTT客户端，基于socket API开发，可用于Linux及各类RTOS。 |
+| bluetooth_stack | sj15712795029 | [GitHub](https://github.com/sj15712795029/bluetooth_stack) | 开源双模蓝牙协议栈，可运行于STM32和Linux，包含HCI、L2CAP、SDP、RFCOMM等协议及多种Profile。 |
+| BabyOS | notrynohigh | [GitHub](https://github.com/notrynohigh/BabyOS) | 专为MCU项目开发提速的代码框架，集成大量功能模块和设备驱动。 |
+| VSF | VSF Team | [GitHub](https://github.com/vsfteam/vsf) | Versaloon Software Framework，事件驱动、可抢占的嵌入式软件框架，提供类Linux的应用开发环境。 |
+| SguanFOC | Sguan-ZhouQing | [GitHub](https://github.com/Sguan-ZhouQing/SguanFOC_Library) | 面向有感/无感PMSM电机的磁场定向控制(FOC)库，集成SVPWM及多种观测器和控制算法。 |
+| XBOOT / XFEL | 蒋建军 (xboot) | [XBOOT](https://github.com/xboot/xboot) \| [XFEL](https://github.com/xboot/xfel) | XBOOT是带应用引擎的可扩展嵌入式bootloader；XFEL是全志SoC的轻量级FEL烧录调试工具，支持ARM与RISC-V芯片。 |
+| TinyMaix | 矽速科技 (Sipeed) | [GitHub](https://github.com/sipeed/TinyMaix) | 面向单片机的超轻量级神经网络推理库(TinyML)，核心代码仅约400行，可在2KB RAM的MCU上运行。 |
+| NNoM | Jianjia Ma (majianjia) | [GitHub](https://github.com/majianjia/nnom) | 面向微控制器的高层神经网络库，可将Keras模型一键部署到MCU。 |
+| Tengine | OPEN AI LAB | [GitHub](https://github.com/OAID/Tengine) | 面向嵌入式设备的轻量级、高性能、模块化AI推理引擎。 |
+
+### 2.3 调试工具与仪器
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
+| DSView | 梦源实验室 (DreamSourceLab) | [GitHub](https://github.com/DreamSourceLab/DSView) | 开源的多功能仪器上位机软件，支持DSLogic逻辑分析仪和DSCope示波器，内置丰富的协议解码。 |
+| wireless-esp8266-dap 无线调试器 | windowsair | [GitHub](https://github.com/windowsair/wireless-esp8266-dap) | 基于ESP8266/ESP32的CMSIS-DAP兼容无线调试器，支持SWD/JTAG。 |
+| nanoDAP | 妙思实验室 (wuxx) | [GitHub](https://github.com/wuxx/nanoDAP) | 小巧、低成本的开源CMSIS-DAP (DAPLink) 调试器硬件。 |
+| H7-TOOL | 安富莱电子 (armfly) | [GitHub](https://github.com/armfly/H7-TOOL_STM32H7_App) | 基于STM32H7的多功能开发工具，集脱机烧录器、示波器、CMSIS-DAP、串口/CAN助手等功能于一体。 |
+| Mini-DSO 迷你示波器 | CreativeLau | [GitHub](https://github.com/CreativeLau/Mini-DSO) | 用STC8A8K单片机制作的简易数字存储示波器。 |
+
+### 2.4 芯片原厂SDK与开发板
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
 | ESP32智能家居开发板                | 乐鑫科技 (Espressif)      | [GitHub](https://github.com/espressif/esp-idf)                | ESP32系列芯片的官方开发框架和示例项目。                     |
 | LicheeRV开发板项目                 | 矽递科技 (Sipeed)        | [GitHub](https://github.com/sipeed/LicheeRV-Nano-Build)       | LicheeRV-Nano的构建项目和开发工具。                         |
 | MaixPy                             | 矽递科技 (Sipeed)        | [GitHub](https://github.com/sipeed/MaixPy)                    | 基于RISC-V平台的MicroPython实现，支持K210/K230等芯片上的嵌入式机器视觉与AI推理。  |
+| Arduino-ESP32 | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/arduino-esp32) | ESP32全系列SoC的Arduino内核支持包。 |
+| ESP-IoT-Solution | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/esp-iot-solution) | 乐鑫物联网方案库，包含大量外设驱动、电机控制、USB、显示、低功耗等组件与参考方案。 |
+| ESP-ADF | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/esp-adf) | 乐鑫音频开发框架，用于开发智能音箱、网络收音机等多媒体应用。 |
+| ESP AI组件 (ESP-SR / ESP-DL / ESP-WHO) | 乐鑫科技 (Espressif) | [ESP-SR](https://github.com/espressif/esp-sr) \| [ESP-DL](https://github.com/espressif/esp-dl) \| [ESP-WHO](https://github.com/espressif/esp-who) | 乐鑫端侧AI组件：语音唤醒与命令词识别(ESP-SR)、深度学习推理库(ESP-DL)、人脸检测与识别框架(ESP-WHO)。 |
+| ESP-BOX | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/esp-box) | 乐鑫新一代AIoT开发平台，硬件与固件开源，支持离线语音交互与触屏。 |
+| ESP-Brookesia | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/esp-brookesia) | 面向AIoT设备的人机交互开发框架，提供类手机的UI系统与AI智能体集成能力。 |
+| ESP-Drone | 乐鑫科技 (Espressif) | [GitHub](https://github.com/espressif/esp-drone) | 基于ESP32/ESP32-S系列的迷你四轴飞行器开源方案，飞控代码移植自Crazyflie，支持Wi-Fi手机遥控。 |
+| NanoKVM | 矽速科技 (Sipeed) | [GitHub](https://github.com/sipeed/NanoKVM) | 基于RISC-V的超小型、低成本IP-KVM，可远程管理服务器和工控机。 |
+| MaixCDK | 矽速科技 (Sipeed) | [GitHub](https://github.com/sipeed/MaixCDK) | Sipeed Maix系列(MaixCAM等)视觉AI硬件的C/C++开发套件，与MaixPy共享底层API。 |
+| iCESugar FPGA开发板 | 妙思实验室 (wuxx) | [GitHub](https://github.com/wuxx/icesugar) | 基于Lattice iCE40UP5K的开源FPGA开发板，可使用全开源工具链开发。 |
+| M5Unified | 明栈科技 (M5Stack) | [GitHub](https://github.com/m5stack/M5Unified) | M5Stack全系列模块化ESP32开发套件的统一驱动库。 |
+| LilyGO T-Deck / T-Watch | LilyGO | [T-Deck](https://github.com/Xinyuan-LilyGO/T-Deck) \| [T-Watch](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) | LilyGO的ESP32手持终端T-Deck和可编程手表T-Watch的开源硬件资料与驱动库。 |
+| TuyaOpen | 涂鸦智能 (Tuya) | [GitHub](https://github.com/tuya/TuyaOpen) | 涂鸦开源的AI+IoT开发框架，支持T2/T3/T5AI、ESP32等多种芯片，可快速开发联网与AI智能体硬件。 |
+| Blinker 点灯物联网 | 点灯科技 | [GitHub](https://github.com/blinker-iot/blinker-library) | 面向嵌入式硬件的物联网接入方案，支持Arduino、ESP32等平台，可对接主流智能音箱。 |
+| Bouffalo SDK | 博流智能 (Bouffalo Lab) | [GitHub](https://github.com/bouffalolab/bouffalo_sdk) | 博流BL616/BL702/BL808等RISC-V无线芯片的IoT与MCU软件开发包。 |
+| HPM SDK | 先楫半导体 (HPMicro) | [GitHub](https://github.com/hpmicro/hpm_sdk) | 先楫高性能RISC-V MCU系列的官方SDK，含驱动、中间件和RTOS支持。 |
+| CH32V307 | 沁恒微电子 (WCH) | [GitHub](https://github.com/openwch/ch32v307) | 沁恒青稞RISC-V MCU CH32V307的SDK、硬件资料与例程。 |
+| Nuclei SDK | 芯来科技 (Nuclei) | [GitHub](https://github.com/Nuclei-Software/nuclei-sdk) | 芯来RISC-V处理器的软件开发套件，支持裸机及FreeRTOS、RT-Thread、UCOSII等RTOS。 |
+| Milk-V Duo SDK | Milk-V | [GitHub](https://github.com/milkv-duo/duo-buildroot-sdk) | Milk-V Duo系列超小型RISC-V Linux开发板的官方Buildroot SDK。 |
+| Luckfox Pico SDK | 幸狐 (Luckfox) | [GitHub](https://github.com/LuckfoxTECH/luckfox-pico) | 基于瑞芯微RV1103/RV1106的Luckfox Pico微型Linux开发板SDK。 |
+| K230 SDK | 嘉楠科技 (Canaan) | [GitHub](https://github.com/kendryte/k230_sdk) | 嘉楠勘智K230 RISC-V AIoT芯片的官方SDK。 |
+| RKNN-Toolkit2 | 瑞芯微 (Rockchip) | [GitHub](https://github.com/airockchip/rknn-toolkit2) | 瑞芯微NPU的模型转换、量化与推理工具链，支持RK3588/RK3566/RV1106等平台的端侧AI部署。 |
+
+### 2.5 物联网平台与连接
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
+| EMQX | EMQ (映云科技) | [GitHub](https://github.com/emqx/emqx) | 高可扩展、高可靠的分布式MQTT消息服务器，广泛用于IoT、工业物联网和车联网。 |
+| NanoMQ | EMQ (映云科技) | [GitHub](https://github.com/nanomq/nanomq) | 面向边缘计算的超轻量级、高性能MQTT消息服务器/消息总线。 |
+| eKuiper | EMQ / LF Edge | [GitHub](https://github.com/lf-edge/ekuiper) | 运行在资源受限边缘设备上的轻量级物联网数据流处理引擎，使用SQL定义规则。 |
+| TDengine | 涛思数据 (TAOS Data) | [GitHub](https://github.com/taosdata/TDengine) | 专为物联网和工业互联网场景设计的高性能时序数据库。 |
+| Xiaomi Home (Home Assistant集成) | 小米 (Xiaomi) | [GitHub](https://github.com/XiaoMi/ha_xiaomi_home) | 小米官方的Home Assistant集成，可在Home Assistant中接入和控制米家IoT设备。 |
+| ImmortalWrt | ImmortalWrt社区 | [GitHub](https://github.com/immortalwrt/immortalwrt) | 面向中国大陆用户优化的OpenWrt分支，支持大量国产路由器及嵌入式Linux设备。 |
+
+### 2.6 学习资源
+
+| 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
+| --- | --- | --- | --- |
+| EmbedSummary | zhengnianli | [GitHub](https://github.com/zhengnianli/EmbedSummary) | 精品嵌入式资源汇总，涵盖开源项目、工具、学习资料等。 |
+| EmbeddedSoftwareLearn | 0voice | [GitHub](https://github.com/0voice/EmbeddedSoftwareLearn) | 面向中文社区的嵌入式软件开发学习路线与知识点总结，涵盖C/C++、驱动开发、RTOS、嵌入式Linux等。 |
+| Embedded-Product-Collect | 杨源鑫 (Yangyuanxin) | [GitHub](https://github.com/Yangyuanxin/Embedded-Product-Collect) | 嵌入式产品级开源项目收集。 |
 
 ## 3. 处理器架构及操作系统 | Arch & OS
 
@@ -158,6 +262,18 @@
 | TencentOS Tiny              | 腾讯          | [GitHub](https://github.com/Tencent/TencentOS-tiny)  | 腾讯物联网终端操作系统（TencentOS tiny）是腾讯面向物联网领域开发的实时操作系统，具有低功耗，低资源占用，模块化，安全可靠等特点，可有效提升物联网终端产品开发效率。TencentOS tiny 提供精简的 RTOS 内核，内核组件可裁剪可配置，可快速移植到多种主流 MCU 及模组芯片上。而且，基于RTOS内核提供了丰富的物联网组件，内部集成主流物联网协议栈（如 CoAP/MQTT/TLS/DTLS/LoRaWAN/NB-IoT 等），可助力物联网终端设备及业务快速接入腾讯云物联网平台。 |
 | AimRT | AimRT | [GitHub](https://github.com/AimRT/AimRT) | AimRT 是一个面向现代机器人领域的运行时开发框架。 它基于 Modern C++ 开发，轻量且易于部署，在资源管控、异步编程、部署配置等方面具有更现代的设计。AimRT 致力于整合机器人端侧、边缘端、云端等各种部署场景的研发。 它服务于现代基于人工智能和云的机器人应用，提供完善的调试和性能分析工具链，以及良好的可观测性支持。AimRT 还提供了全面的插件开发接口，具有高度可扩展性。 它与 ROS2、HTTP、Grpc 等传统机器人生态系统或云服务生态系统兼容，并支持对现有系统的逐步升级。|
 | OpenHarmony | 华为/开放原子基金会 | [Gitee](https://gitee.com/openharmony) | 面向全场景智能终端的开源分布式操作系统，支持从嵌入式设备到手机等多种形态，已广泛应用于IoT和机器人产品。 |
+| openvela | 小米 (Xiaomi) | [GitHub](https://github.com/open-vela/docs) | 小米基于Apache NuttX打造的开源嵌入式物联网操作系统(Xiaomi Vela)，面向可穿戴、智能家居等AIoT设备。 |
+| AliOS Things | 阿里巴巴 | [GitHub](https://github.com/alibaba/AliOS-Things) | 阿里面向IoT领域的高可伸缩物联网操作系统。 |
+| Huawei LiteOS | 华为 | [GitHub](https://github.com/LiteOS/LiteOS) | 华为面向物联网的轻量级实时操作系统内核，也是OpenHarmony轻量系统内核的前身。 |
+| rCore-Tutorial | 清华大学 (rCore-OS) | [GitHub](https://github.com/rcore-os/rCore-Tutorial-v3) | 用Rust从零开始编写可运行于RISC-V的操作系统的开源教程。 |
+| RustSBI | 洛佳 (RustSBI团队) | [GitHub](https://github.com/rustsbi/rustsbi) | Rust语言实现的RISC-V SBI固件库，已被多款国产RISC-V开发板采用。 |
+| 星绽 (Asterinas) | 蚂蚁集团等 | [GitHub](https://github.com/asterinas/asterinas) | 使用Rust编写、兼容Linux ABI的内存安全操作系统内核，采用框内核(framekernel)架构。 |
+| DragonOS | DragonOS社区 | [GitHub](https://github.com/DragonOS-Community/DragonOS) | 使用Rust从零自主研发、兼容Linux的开源操作系统。 |
+| hvisor | 矽望社区 (syswonder) | [GitHub](https://github.com/syswonder/hvisor) | Rust编写的轻量级Type-1虚拟机监视器，面向边缘和嵌入式设备。 |
+| 蜂鸟E203 | 芯来科技 (Nuclei) | [GitHub](https://github.com/riscv-mcu/e203_hbirdv2) | 超低功耗开源RISC-V处理器核及配套SoC，是国内最知名的RISC-V入门处理器之一。 |
+| 玄铁OpenC910 / 无剑100 | 平头哥 (T-Head) | [OpenC910](https://github.com/XUANTIE-RV/openc910) \| [无剑100](https://github.com/XUANTIE-RV/wujian100_open) | 平头哥开源的玄铁C910高性能RISC-V处理器核，以及无剑100 MCU SoC平台。 |
+| 果壳 (NutShell) | 中国科学院大学 | [GitHub](https://github.com/OSCPU/NutShell) | 国科大本科生设计的RISC-V处理器SoC，“一生一芯”计划的首期成果。 |
+| tinyriscv | liangkangnan | [GitHub](https://github.com/liangkangnan/tinyriscv) | 从零开始编写的极简、易懂的RISC-V处理器核，适合学习入门。 |
 
 ## 4. 机器学习项目 | ML
 
@@ -208,4 +324,4 @@
 
 ---
 
-本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年9月15日
+本项目由 [云飞机器人实验室](https://yfrobotics.github.io/) 长期维护与更新。最后更新时间： 2026年11月12日
